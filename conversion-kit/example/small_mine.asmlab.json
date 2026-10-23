@@ -1,0 +1,383 @@
+{
+ "wetnessScale": 2,
+ "files": [
+  {
+   "id": "small",
+   "name": "small mine",
+   "origin": {
+    "id": "S",
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "kind": "end"
+   },
+   "nodes": [
+    {
+     "id": "S",
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "kind": "end",
+     "temperature": 28.0,
+     "wetBulbTemp": 20.0,
+     "bc": "intake",
+     "fixedP": 101325.0
+    },
+    {
+     "id": "A",
+     "x": 0,
+     "y": 400,
+     "z": -300,
+     "kind": "junction",
+     "temperature": 28.0,
+     "wetBulbTemp": 20.0
+    },
+    {
+     "id": "B",
+     "x": 300,
+     "y": 400,
+     "z": -300,
+     "kind": "junction",
+     "temperature": 28.0,
+     "wetBulbTemp": 20.0
+    },
+    {
+     "id": "C",
+     "x": 300,
+     "y": 0,
+     "z": 0,
+     "kind": "junction",
+     "temperature": 28.0,
+     "wetBulbTemp": 20.0
+    },
+    {
+     "id": "X",
+     "x": 600,
+     "y": 0,
+     "z": 0,
+     "kind": "end",
+     "temperature": 28.0,
+     "wetBulbTemp": 20.0,
+     "bc": "exhaust",
+     "fixedP": 101325.0
+    }
+   ],
+   "tunnels": [
+    {
+     "id": "shaft_down",
+     "from": "S",
+     "to": "A",
+     "width": 6,
+     "height": 6,
+     "length": 500.0,
+     "layer": "shaft_down",
+     "kind": "shaft",
+     "profile": {
+      "kind": "rectangular",
+      "span": 6,
+      "height": 6,
+      "archRatio": 1,
+      "invertRise": 0,
+      "pointCount": 4,
+      "points": [
+       {
+        "x": -3.0,
+        "y": 0
+       },
+       {
+        "x": 3.0,
+        "y": 0
+       },
+       {
+        "x": 3.0,
+        "y": 6
+       },
+       {
+        "x": -3.0,
+        "y": 6
+       }
+      ]
+     },
+     "profileSource": "imported",
+     "curveRadius": 0,
+     "arcSide": 1,
+     "k": 0.012,
+     "kSource": "user",
+     "shockLoss": 0,
+     "airDensity": 1.2,
+     "device": "none",
+     "thermal": {
+      "vrtEnabled": true,
+      "ventilationTimeYr": 5,
+      "wetness": 0.1
+     }
+    },
+    {
+     "id": "level",
+     "from": "A",
+     "to": "B",
+     "width": 5,
+     "height": 5,
+     "length": 300.0,
+     "layer": "level",
+     "kind": "drive",
+     "profile": {
+      "kind": "rectangular",
+      "span": 5,
+      "height": 5,
+      "archRatio": 1,
+      "invertRise": 0,
+      "pointCount": 4,
+      "points": [
+       {
+        "x": -2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 5
+       },
+       {
+        "x": -2.5,
+        "y": 5
+       }
+      ]
+     },
+     "profileSource": "imported",
+     "curveRadius": 0,
+     "arcSide": 1,
+     "k": 0.012,
+     "kSource": "user",
+     "shockLoss": 0,
+     "airDensity": 1.2,
+     "device": "none",
+     "thermal": {
+      "vrtEnabled": true,
+      "ventilationTimeYr": 3,
+      "wetness": 0.275,
+      "electricKw": 150
+     }
+    },
+    {
+     "id": "wall_on_level",
+     "from": "B",
+     "to": "C",
+     "width": 5,
+     "height": 5,
+     "length": 500.0,
+     "layer": "wall_on_level",
+     "kind": "drive",
+     "profile": {
+      "kind": "rectangular",
+      "span": 5,
+      "height": 5,
+      "archRatio": 1,
+      "invertRise": 0,
+      "pointCount": 4,
+      "points": [
+       {
+        "x": -2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 5
+       },
+       {
+        "x": -2.5,
+        "y": 5
+       }
+      ]
+     },
+     "profileSource": "imported",
+     "curveRadius": 0,
+     "arcSide": 1,
+     "k": 0.012,
+     "kSource": "user",
+     "shockLoss": 0,
+     "airDensity": 1.2,
+     "device": "wall",
+     "wallType": "brick",
+     "wallR": 1000,
+     "thermal": {
+      "vrtEnabled": false
+     }
+    },
+    {
+     "id": "shaft_up",
+     "from": "B",
+     "to": "C",
+     "width": 6,
+     "height": 6,
+     "length": 500.0,
+     "layer": "shaft_up",
+     "kind": "shaft",
+     "profile": {
+      "kind": "rectangular",
+      "span": 6,
+      "height": 6,
+      "archRatio": 1,
+      "invertRise": 0,
+      "pointCount": 4,
+      "points": [
+       {
+        "x": -3.0,
+        "y": 0
+       },
+       {
+        "x": 3.0,
+        "y": 0
+       },
+       {
+        "x": 3.0,
+        "y": 6
+       },
+       {
+        "x": -3.0,
+        "y": 6
+       }
+      ]
+     },
+     "profileSource": "imported",
+     "curveRadius": 0,
+     "arcSide": 1,
+     "k": 0.012,
+     "kSource": "user",
+     "shockLoss": 0,
+     "airDensity": 1.2,
+     "device": "none",
+     "thermal": {
+      "vrtEnabled": true,
+      "ventilationTimeYr": 5,
+      "wetness": 0.1,
+      "cooler": {
+       "kind": "bac",
+       "dutyKw": 800
+      }
+     }
+    },
+    {
+     "id": "fan_drift",
+     "from": "C",
+     "to": "X",
+     "width": 5,
+     "height": 5,
+     "length": 300.0,
+     "layer": "fan_drift",
+     "kind": "drive",
+     "profile": {
+      "kind": "rectangular",
+      "span": 5,
+      "height": 5,
+      "archRatio": 1,
+      "invertRise": 0,
+      "pointCount": 4,
+      "points": [
+       {
+        "x": -2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 0
+       },
+       {
+        "x": 2.5,
+        "y": 5
+       },
+       {
+        "x": -2.5,
+        "y": 5
+       }
+      ]
+     },
+     "profileSource": "imported",
+     "curveRadius": 0,
+     "arcSide": 1,
+     "k": 0.012,
+     "kSource": "user",
+     "shockLoss": 0,
+     "airDensity": 1.2,
+     "device": "fan",
+     "fanKind": "main",
+     "speedRef": 1,
+     "rhoRef": 1.2,
+     "operatingSpeedRps": 1,
+     "fan": {
+      "name": "Main fan",
+      "operatingSpeedRps": 1,
+      "position": 0.5
+     },
+     "fanCurve": [
+      {
+       "Q": 0,
+       "P": 3000,
+       "eta": 70
+      },
+      {
+       "Q": 100,
+       "P": 2800,
+       "eta": 78
+      },
+      {
+       "Q": 200,
+       "P": 2200,
+       "eta": 82
+      },
+      {
+       "Q": 300,
+       "P": 1200,
+       "eta": 70
+      },
+      {
+       "Q": 350,
+       "P": 0,
+       "eta": 20
+      }
+     ]
+    }
+   ],
+   "overlay": [],
+   "treatAsTunnels": true,
+   "showTunnels": true,
+   "showOverlay": false,
+   "tunnelColor": "#6b8cbe",
+   "overlayColor": "#3b82f6",
+   "overlayOpacity": 0.35,
+   "stats": {
+    "faces": 0,
+    "polylines": 5,
+    "tunnels": 5,
+    "nodes": 5,
+    "droppedOutliers": 0
+   },
+   "source": "json",
+   "junctions": [],
+   "thermalSite": {
+    "surfaceDryBulb": 28,
+    "surfaceWetBulb": 20,
+    "surfacePressure": 101.325,
+    "wetWall": "film",
+    "wetness": 0.1,
+    "rockHeatAll": true
+   }
+  }
+ ],
+ "ducts": null,
+ "studioStrings": [],
+ "studioSurfaces": [],
+ "workingZ": 0,
+ "standards": {
+  "frictionDrive": 0.012,
+  "frictionShaft": 0.012
+ },
+ "projectName": "small mine"
+}
