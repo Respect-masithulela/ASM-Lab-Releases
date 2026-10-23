@@ -1,0 +1,102 @@
+{
+ "format": "asmlab-ducts",
+ "version": 1,
+ "data": {
+  "vnodes": [
+   {
+    "id": "V1",
+    "a": "SAMPLE|I",
+    "b": "SAMPLE|J",
+    "t": 0.9
+   },
+   {
+    "id": "V2",
+    "a": "SAMPLE|J",
+    "b": "SAMPLE|H",
+    "t": 0.9
+   }
+  ],
+  "ducts": [
+   {
+    "id": "D1",
+    "name": "Duct 1",
+    "route": [
+     "V1",
+     "SAMPLE|J",
+     "V2"
+    ],
+    "D_mm": 1015,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "left",
+    "vert": "roof",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN1",
+    "to": "DN2",
+    "pointPins": {},
+    "legOffsets": {},
+    "fans": [
+     {
+      "id": "F1",
+      "raw": 3,
+      "fanKind": "auxiliary",
+      "fanSource": "quadratic",
+      "fan": {
+       "name": "Aux fan",
+       "source": "quadratic",
+       "controlMode": "curve",
+       "quadraticInputs": {
+        "P0": 3000,
+        "Q_duty": 15,
+        "P_duty": 2000,
+        "rho": 1.2,
+        "speedRps": 25
+       }
+      },
+      "fanOp": {
+       "Q": 19.74,
+       "P": 1268.8,
+       "airPower": 25.05,
+       "R_sys": 3.256348080929005,
+       "inStall": false,
+       "reverseFlow": false,
+       "beyondCurve": false,
+       "rhoOp": 1.2073704430930956,
+       "Q_max_curve": 25.98076211353316
+      }
+     }
+    ],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   }
+  ],
+  "ductNodes": [
+   {
+    "id": "DN1",
+    "host": "V1",
+    "p": null
+   },
+   {
+    "id": "DN2",
+    "host": "SAMPLE|J",
+    "p": null
+   }
+  ],
+  "machines": [],
+  "assets": [],
+  "seq": {
+   "d": 1,
+   "c": 0,
+   "dn": 2,
+   "v": 2,
+   "m": 0,
+   "a": 0
+  }
+ }
+}

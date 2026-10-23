@@ -1,0 +1,527 @@
+{
+ "projectName": "10 symmetric ladder",
+ "notes": "8-rung ladder, perfectly symmetric. Near-zero flow in the middle rungs is the case where a Newton step can oscillate forever without a sufficient-decrease test.",
+ "expected": {
+  "expect": "converges in tens of iterations, not thousands; middle rungs carry almost nothing and must not flip sign between iterations",
+  "basis": "regression case for the Armijo line search"
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "T0",
+    "x": 0,
+    "y": 0,
+    "elevation": 0,
+    "type": "intake",
+    "fixedPressure": 101425
+   },
+   {
+    "id": "B0",
+    "x": 0,
+    "y": -40,
+    "elevation": 0,
+    "type": "exhaust",
+    "fixedPressure": 101325
+   },
+   {
+    "id": "T1",
+    "x": 40,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B1",
+    "x": 40,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T2",
+    "x": 80,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B2",
+    "x": 80,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T3",
+    "x": 120,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B3",
+    "x": 120,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T4",
+    "x": 160,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B4",
+    "x": 160,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T5",
+    "x": 200,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B5",
+    "x": 200,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T6",
+    "x": 240,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B6",
+    "x": 240,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T7",
+    "x": 280,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B7",
+    "x": 280,
+    "y": -40,
+    "elevation": 0
+   },
+   {
+    "id": "T8",
+    "x": 320,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B8",
+    "x": 320,
+    "y": -40,
+    "elevation": 0
+   }
+  ],
+  "airways": [
+   {
+    "id": "top0",
+    "name": "top0",
+    "fromNode": "T0",
+    "toNode": "T1",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot0",
+    "name": "bot0",
+    "fromNode": "B0",
+    "toNode": "B1",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top1",
+    "name": "top1",
+    "fromNode": "T1",
+    "toNode": "T2",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot1",
+    "name": "bot1",
+    "fromNode": "B1",
+    "toNode": "B2",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top2",
+    "name": "top2",
+    "fromNode": "T2",
+    "toNode": "T3",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot2",
+    "name": "bot2",
+    "fromNode": "B2",
+    "toNode": "B3",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top3",
+    "name": "top3",
+    "fromNode": "T3",
+    "toNode": "T4",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot3",
+    "name": "bot3",
+    "fromNode": "B3",
+    "toNode": "B4",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top4",
+    "name": "top4",
+    "fromNode": "T4",
+    "toNode": "T5",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot4",
+    "name": "bot4",
+    "fromNode": "B4",
+    "toNode": "B5",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top5",
+    "name": "top5",
+    "fromNode": "T5",
+    "toNode": "T6",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot5",
+    "name": "bot5",
+    "fromNode": "B5",
+    "toNode": "B6",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top6",
+    "name": "top6",
+    "fromNode": "T6",
+    "toNode": "T7",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot6",
+    "name": "bot6",
+    "fromNode": "B6",
+    "toNode": "B7",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "top7",
+    "name": "top7",
+    "fromNode": "T7",
+    "toNode": "T8",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "bot7",
+    "name": "bot7",
+    "fromNode": "B7",
+    "toNode": "B8",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung0",
+    "name": "rung0",
+    "fromNode": "T0",
+    "toNode": "B0",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung1",
+    "name": "rung1",
+    "fromNode": "T1",
+    "toNode": "B1",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung2",
+    "name": "rung2",
+    "fromNode": "T2",
+    "toNode": "B2",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung3",
+    "name": "rung3",
+    "fromNode": "T3",
+    "toNode": "B3",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung4",
+    "name": "rung4",
+    "fromNode": "T4",
+    "toNode": "B4",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung5",
+    "name": "rung5",
+    "fromNode": "T5",
+    "toNode": "B5",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung6",
+    "name": "rung6",
+    "fromNode": "T6",
+    "toNode": "B6",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung7",
+    "name": "rung7",
+    "fromNode": "T7",
+    "toNode": "B7",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   },
+   {
+    "id": "rung8",
+    "name": "rung8",
+    "fromNode": "T8",
+    "toNode": "B8",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 40
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ },
+ "nodePositions": {
+  "T0": {
+   "x": 0,
+   "y": 0
+  },
+  "B0": {
+   "x": 0,
+   "y": -40
+  },
+  "T1": {
+   "x": 40,
+   "y": 0
+  },
+  "B1": {
+   "x": 40,
+   "y": -40
+  },
+  "T2": {
+   "x": 80,
+   "y": 0
+  },
+  "B2": {
+   "x": 80,
+   "y": -40
+  },
+  "T3": {
+   "x": 120,
+   "y": 0
+  },
+  "B3": {
+   "x": 120,
+   "y": -40
+  },
+  "T4": {
+   "x": 160,
+   "y": 0
+  },
+  "B4": {
+   "x": 160,
+   "y": -40
+  },
+  "T5": {
+   "x": 200,
+   "y": 0
+  },
+  "B5": {
+   "x": 200,
+   "y": -40
+  },
+  "T6": {
+   "x": 240,
+   "y": 0
+  },
+  "B6": {
+   "x": 240,
+   "y": -40
+  },
+  "T7": {
+   "x": 280,
+   "y": 0
+  },
+  "B7": {
+   "x": 280,
+   "y": -40
+  },
+  "T8": {
+   "x": 320,
+   "y": 0
+  },
+  "B8": {
+   "x": 320,
+   "y": -40
+  }
+ }
+}

@@ -1,0 +1,1649 @@
+{
+  "projectName": "UG2 reef \u2014 conventional stoping",
+  "blockModel": "ug2_reef.dm",
+  "network": {
+    "nodes": [
+      {
+        "id": "SURF-IN",
+        "name": "Decline portal",
+        "type": "intake",
+        "elevation": -520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SURF-EX",
+        "name": "Return raise collar",
+        "type": "exhaust",
+        "elevation": -520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "DEC-FOOT",
+        "name": "Decline foot",
+        "type": "junction",
+        "elevation": -640.905,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C0",
+        "name": "Strike South 5080",
+        "type": "junction",
+        "elevation": -639.658,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C1",
+        "name": "Strike South 5160",
+        "type": "junction",
+        "elevation": -638.366,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C2",
+        "name": "Strike South 5240",
+        "type": "junction",
+        "elevation": -638.086,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C3",
+        "name": "Strike South 5320",
+        "type": "junction",
+        "elevation": -638.907,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C4",
+        "name": "Strike South 5400",
+        "type": "junction",
+        "elevation": -640.568,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C5",
+        "name": "Strike South 5480",
+        "type": "junction",
+        "elevation": -642.541,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C6",
+        "name": "Strike South 5560",
+        "type": "junction",
+        "elevation": -644.199,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C7",
+        "name": "Strike South 5640",
+        "type": "junction",
+        "elevation": -645.016,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C8",
+        "name": "Strike South 5720",
+        "type": "junction",
+        "elevation": -660.731,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C9",
+        "name": "Strike South 5800",
+        "type": "junction",
+        "elevation": -659.436,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C10",
+        "name": "Strike South 5880",
+        "type": "junction",
+        "elevation": -657.542,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C11",
+        "name": "Strike South 5960",
+        "type": "junction",
+        "elevation": -655.65,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S0C12",
+        "name": "Strike South 6040",
+        "type": "junction",
+        "elevation": -654.362,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "S1C0",
+        "name": "Strike Mid 5080",
+        "type": "junction",
+        "elevation": -686.309,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C1",
+        "name": "Strike Mid 5160",
+        "type": "junction",
+        "elevation": -685.017,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C2",
+        "name": "Strike Mid 5240",
+        "type": "junction",
+        "elevation": -684.738,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C3",
+        "name": "Strike Mid 5320",
+        "type": "junction",
+        "elevation": -685.559,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C4",
+        "name": "Strike Mid 5400",
+        "type": "junction",
+        "elevation": -687.219,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C7",
+        "name": "Strike Mid 5640",
+        "type": "junction",
+        "elevation": -691.667,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C8",
+        "name": "Strike Mid 5720",
+        "type": "junction",
+        "elevation": -707.382,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C9",
+        "name": "Strike Mid 5800",
+        "type": "junction",
+        "elevation": -706.087,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C10",
+        "name": "Strike Mid 5880",
+        "type": "junction",
+        "elevation": -704.193,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C11",
+        "name": "Strike Mid 5960",
+        "type": "junction",
+        "elevation": -702.301,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S1C12",
+        "name": "Strike Mid 6040",
+        "type": "junction",
+        "elevation": -701.014,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "S2C0",
+        "name": "Strike North 5080",
+        "type": "junction",
+        "elevation": -732.96,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C1",
+        "name": "Strike North 5160",
+        "type": "junction",
+        "elevation": -731.669,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C2",
+        "name": "Strike North 5240",
+        "type": "junction",
+        "elevation": -731.389,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C3",
+        "name": "Strike North 5320",
+        "type": "junction",
+        "elevation": -732.21,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C4",
+        "name": "Strike North 5400",
+        "type": "junction",
+        "elevation": -733.871,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C5",
+        "name": "Strike North 5480",
+        "type": "junction",
+        "elevation": -735.844,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C6",
+        "name": "Strike North 5560",
+        "type": "junction",
+        "elevation": -737.502,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C7",
+        "name": "Strike North 5640",
+        "type": "junction",
+        "elevation": -738.318,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C8",
+        "name": "Strike North 5720",
+        "type": "junction",
+        "elevation": -754.034,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C9",
+        "name": "Strike North 5800",
+        "type": "junction",
+        "elevation": -752.738,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C10",
+        "name": "Strike North 5880",
+        "type": "junction",
+        "elevation": -750.844,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C11",
+        "name": "Strike North 5960",
+        "type": "junction",
+        "elevation": -748.953,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "S2C12",
+        "name": "Strike North 6040",
+        "type": "junction",
+        "elevation": -747.665,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "North"
+      },
+      {
+        "id": "ST01",
+        "name": "Stope 5160",
+        "type": "junction",
+        "elevation": -637.809,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST03",
+        "name": "Stope 5320",
+        "type": "junction",
+        "elevation": -638.35,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST05",
+        "name": "Stope 5480",
+        "type": "junction",
+        "elevation": -641.984,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST07",
+        "name": "Stope 5640",
+        "type": "junction",
+        "elevation": -644.458,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST09",
+        "name": "Stope 5800",
+        "type": "junction",
+        "elevation": -658.879,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST011",
+        "name": "Stope 5960",
+        "type": "junction",
+        "elevation": -655.093,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "South"
+      },
+      {
+        "id": "ST11",
+        "name": "Stope 5160",
+        "type": "junction",
+        "elevation": -684.46,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "ST13",
+        "name": "Stope 5320",
+        "type": "junction",
+        "elevation": -685.001,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "ST17",
+        "name": "Stope 5640",
+        "type": "junction",
+        "elevation": -691.11,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "ST19",
+        "name": "Stope 5800",
+        "type": "junction",
+        "elevation": -705.53,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "ST111",
+        "name": "Stope 5960",
+        "type": "junction",
+        "elevation": -701.744,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      }
+    ],
+    "airways": [
+      {
+        "id": "DEC",
+        "name": "Twin decline",
+        "fromNode": "SURF-IN",
+        "toNode": "DEC-FOOT",
+        "length": 200.54,
+        "width": 5.5,
+        "height": 5.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Surface"
+      },
+      {
+        "id": "ST0-1",
+        "name": "South strike",
+        "fromNode": "S0C0",
+        "toNode": "S0C1",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-2",
+        "name": "South strike",
+        "fromNode": "S0C1",
+        "toNode": "S0C2",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-3",
+        "name": "South strike",
+        "fromNode": "S0C2",
+        "toNode": "S0C3",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-4",
+        "name": "South strike",
+        "fromNode": "S0C3",
+        "toNode": "S0C4",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-5",
+        "name": "South strike",
+        "fromNode": "S0C4",
+        "toNode": "S0C5",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-6",
+        "name": "South strike",
+        "fromNode": "S0C5",
+        "toNode": "S0C6",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-7",
+        "name": "South strike",
+        "fromNode": "S0C6",
+        "toNode": "S0C7",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-8",
+        "name": "South strike",
+        "fromNode": "S0C7",
+        "toNode": "S0C8",
+        "length": 81.53,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-9",
+        "name": "South strike",
+        "fromNode": "S0C8",
+        "toNode": "S0C9",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-10",
+        "name": "South strike",
+        "fromNode": "S0C9",
+        "toNode": "S0C10",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-11",
+        "name": "South strike",
+        "fromNode": "S0C10",
+        "toNode": "S0C11",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST0-12",
+        "name": "South strike",
+        "fromNode": "S0C11",
+        "toNode": "S0C12",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "ST1-1",
+        "name": "Mid strike",
+        "fromNode": "S1C0",
+        "toNode": "S1C1",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-2",
+        "name": "Mid strike",
+        "fromNode": "S1C1",
+        "toNode": "S1C2",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-3",
+        "name": "Mid strike",
+        "fromNode": "S1C2",
+        "toNode": "S1C3",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-4",
+        "name": "Mid strike",
+        "fromNode": "S1C3",
+        "toNode": "S1C4",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-8",
+        "name": "Mid strike",
+        "fromNode": "S1C7",
+        "toNode": "S1C8",
+        "length": 81.53,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-9",
+        "name": "Mid strike",
+        "fromNode": "S1C8",
+        "toNode": "S1C9",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-10",
+        "name": "Mid strike",
+        "fromNode": "S1C9",
+        "toNode": "S1C10",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-11",
+        "name": "Mid strike",
+        "fromNode": "S1C10",
+        "toNode": "S1C11",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST1-12",
+        "name": "Mid strike",
+        "fromNode": "S1C11",
+        "toNode": "S1C12",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "ST2-1",
+        "name": "North strike",
+        "fromNode": "S2C0",
+        "toNode": "S2C1",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-2",
+        "name": "North strike",
+        "fromNode": "S2C1",
+        "toNode": "S2C2",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-3",
+        "name": "North strike",
+        "fromNode": "S2C2",
+        "toNode": "S2C3",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-4",
+        "name": "North strike",
+        "fromNode": "S2C3",
+        "toNode": "S2C4",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-5",
+        "name": "North strike",
+        "fromNode": "S2C4",
+        "toNode": "S2C5",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-6",
+        "name": "North strike",
+        "fromNode": "S2C5",
+        "toNode": "S2C6",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-7",
+        "name": "North strike",
+        "fromNode": "S2C6",
+        "toNode": "S2C7",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-8",
+        "name": "North strike",
+        "fromNode": "S2C7",
+        "toNode": "S2C8",
+        "length": 81.53,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-9",
+        "name": "North strike",
+        "fromNode": "S2C8",
+        "toNode": "S2C9",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-10",
+        "name": "North strike",
+        "fromNode": "S2C9",
+        "toNode": "S2C10",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-11",
+        "name": "North strike",
+        "fromNode": "S2C10",
+        "toNode": "S2C11",
+        "length": 80.02,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "ST2-12",
+        "name": "North strike",
+        "fromNode": "S2C11",
+        "toNode": "S2C12",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-North"
+      },
+      {
+        "id": "DEC-S",
+        "name": "Decline to south strike",
+        "fromNode": "DEC-FOOT",
+        "toNode": "S0C1",
+        "length": 40.08,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA0-0",
+        "name": "Dip raise",
+        "fromNode": "S0C0",
+        "toNode": "S1C0",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-0",
+        "name": "Dip raise",
+        "fromNode": "S1C0",
+        "toNode": "S2C0",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RA0-2",
+        "name": "Dip raise",
+        "fromNode": "S0C2",
+        "toNode": "S1C2",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-2",
+        "name": "Dip raise",
+        "fromNode": "S1C2",
+        "toNode": "S2C2",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RA0-4",
+        "name": "Dip raise",
+        "fromNode": "S0C4",
+        "toNode": "S1C4",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-4",
+        "name": "Dip raise",
+        "fromNode": "S1C4",
+        "toNode": "S2C4",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RA0-8",
+        "name": "Dip raise",
+        "fromNode": "S0C8",
+        "toNode": "S1C8",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-8",
+        "name": "Dip raise",
+        "fromNode": "S1C8",
+        "toNode": "S2C8",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RA0-10",
+        "name": "Dip raise",
+        "fromNode": "S0C10",
+        "toNode": "S1C10",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-10",
+        "name": "Dip raise",
+        "fromNode": "S1C10",
+        "toNode": "S2C10",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RA0-12",
+        "name": "Dip raise",
+        "fromNode": "S0C12",
+        "toNode": "S1C12",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-South"
+      },
+      {
+        "id": "RA1-12",
+        "name": "Dip raise",
+        "fromNode": "S1C12",
+        "toNode": "S2C12",
+        "length": 244.49,
+        "width": 3.2,
+        "height": 3.2,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.2,
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "STOPE0-1",
+        "name": "Stope",
+        "fromNode": "S0C1",
+        "toNode": "ST01",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE0-3",
+        "name": "Stope",
+        "fromNode": "S0C3",
+        "toNode": "ST03",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE0-5",
+        "name": "Stope",
+        "fromNode": "S0C5",
+        "toNode": "ST05",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE0-7",
+        "name": "Stope",
+        "fromNode": "S0C7",
+        "toNode": "ST07",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE0-9",
+        "name": "Stope",
+        "fromNode": "S0C9",
+        "toNode": "ST09",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE0-11",
+        "name": "Stope",
+        "fromNode": "S0C11",
+        "toNode": "ST011",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-South"
+      },
+      {
+        "id": "STOPE1-1",
+        "name": "Stope",
+        "fromNode": "S1C1",
+        "toNode": "ST11",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "STOPE1-3",
+        "name": "Stope",
+        "fromNode": "S1C3",
+        "toNode": "ST13",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "STOPE1-7",
+        "name": "Stope",
+        "fromNode": "S1C7",
+        "toNode": "ST17",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "STOPE1-9",
+        "name": "Stope",
+        "fromNode": "S1C9",
+        "toNode": "ST19",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "STOPE1-11",
+        "name": "Stope",
+        "fromNode": "S1C11",
+        "toNode": "ST111",
+        "length": 28.01,
+        "width": 2.2,
+        "height": 1.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "RET-RAISE",
+        "name": "Return raise",
+        "fromNode": "S2C12",
+        "toNode": "SURF-EX",
+        "length": 689.81,
+        "width": 4.5,
+        "height": 4.5,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 4.5,
+        "collectionId": "col-Surface"
+      }
+    ],
+    "fans": [
+      {
+        "id": "F-RET-RAISE",
+        "airwayId": "RET-RAISE",
+        "name": "UG2 main fan",
+        "rhoRef": 1.2,
+        "points": [
+          {
+            "Q": 0,
+            "P": 380.0
+          },
+          {
+            "Q": 35.0,
+            "P": 366.9
+          },
+          {
+            "Q": 70.0,
+            "P": 327.8
+          },
+          {
+            "Q": 105.0,
+            "P": 262.4
+          },
+          {
+            "Q": 140,
+            "P": 171.0
+          },
+          {
+            "Q": 161.0,
+            "P": 103.6
+          }
+        ]
+      }
+    ],
+    "regulators": [
+      {
+        "id": "R-MID",
+        "name": "Mid-strike regulator",
+        "airwayId": "ST1-8",
+        "status": "open",
+        "mode": "fixed-area",
+        "area": 8.0
+      }
+    ]
+  },
+  "nodePositions": {
+    "SURF-IN": {
+      "x": 5120,
+      "y": 7920,
+      "z": -520.0
+    },
+    "SURF-EX": {
+      "x": 5920,
+      "y": 7920,
+      "z": -520.0
+    },
+    "DEC-FOOT": {
+      "x": 5120,
+      "y": 8080.0,
+      "z": -640.905
+    },
+    "S0C0": {
+      "x": 5080.0,
+      "y": 8080.0,
+      "z": -639.658
+    },
+    "S0C1": {
+      "x": 5160.0,
+      "y": 8080.0,
+      "z": -638.366
+    },
+    "S0C2": {
+      "x": 5240.0,
+      "y": 8080.0,
+      "z": -638.086
+    },
+    "S0C3": {
+      "x": 5320.0,
+      "y": 8080.0,
+      "z": -638.907
+    },
+    "S0C4": {
+      "x": 5400.0,
+      "y": 8080.0,
+      "z": -640.568
+    },
+    "S0C5": {
+      "x": 5480.0,
+      "y": 8080.0,
+      "z": -642.541
+    },
+    "S0C6": {
+      "x": 5560.0,
+      "y": 8080.0,
+      "z": -644.199
+    },
+    "S0C7": {
+      "x": 5640.0,
+      "y": 8080.0,
+      "z": -645.016
+    },
+    "S0C8": {
+      "x": 5720.0,
+      "y": 8080.0,
+      "z": -660.731
+    },
+    "S0C9": {
+      "x": 5800.0,
+      "y": 8080.0,
+      "z": -659.436
+    },
+    "S0C10": {
+      "x": 5880.0,
+      "y": 8080.0,
+      "z": -657.542
+    },
+    "S0C11": {
+      "x": 5960.0,
+      "y": 8080.0,
+      "z": -655.65
+    },
+    "S0C12": {
+      "x": 6040.0,
+      "y": 8080.0,
+      "z": -654.362
+    },
+    "S1C0": {
+      "x": 5080.0,
+      "y": 8320.0,
+      "z": -686.309
+    },
+    "S1C1": {
+      "x": 5160.0,
+      "y": 8320.0,
+      "z": -685.017
+    },
+    "S1C2": {
+      "x": 5240.0,
+      "y": 8320.0,
+      "z": -684.738
+    },
+    "S1C3": {
+      "x": 5320.0,
+      "y": 8320.0,
+      "z": -685.559
+    },
+    "S1C4": {
+      "x": 5400.0,
+      "y": 8320.0,
+      "z": -687.219
+    },
+    "S1C7": {
+      "x": 5640.0,
+      "y": 8320.0,
+      "z": -691.667
+    },
+    "S1C8": {
+      "x": 5720.0,
+      "y": 8320.0,
+      "z": -707.382
+    },
+    "S1C9": {
+      "x": 5800.0,
+      "y": 8320.0,
+      "z": -706.087
+    },
+    "S1C10": {
+      "x": 5880.0,
+      "y": 8320.0,
+      "z": -704.193
+    },
+    "S1C11": {
+      "x": 5960.0,
+      "y": 8320.0,
+      "z": -702.301
+    },
+    "S1C12": {
+      "x": 6040.0,
+      "y": 8320.0,
+      "z": -701.014
+    },
+    "S2C0": {
+      "x": 5080.0,
+      "y": 8560.0,
+      "z": -732.96
+    },
+    "S2C1": {
+      "x": 5160.0,
+      "y": 8560.0,
+      "z": -731.669
+    },
+    "S2C2": {
+      "x": 5240.0,
+      "y": 8560.0,
+      "z": -731.389
+    },
+    "S2C3": {
+      "x": 5320.0,
+      "y": 8560.0,
+      "z": -732.21
+    },
+    "S2C4": {
+      "x": 5400.0,
+      "y": 8560.0,
+      "z": -733.871
+    },
+    "S2C5": {
+      "x": 5480.0,
+      "y": 8560.0,
+      "z": -735.844
+    },
+    "S2C6": {
+      "x": 5560.0,
+      "y": 8560.0,
+      "z": -737.502
+    },
+    "S2C7": {
+      "x": 5640.0,
+      "y": 8560.0,
+      "z": -738.318
+    },
+    "S2C8": {
+      "x": 5720.0,
+      "y": 8560.0,
+      "z": -754.034
+    },
+    "S2C9": {
+      "x": 5800.0,
+      "y": 8560.0,
+      "z": -752.738
+    },
+    "S2C10": {
+      "x": 5880.0,
+      "y": 8560.0,
+      "z": -750.844
+    },
+    "S2C11": {
+      "x": 5960.0,
+      "y": 8560.0,
+      "z": -748.953
+    },
+    "S2C12": {
+      "x": 6040.0,
+      "y": 8560.0,
+      "z": -747.665
+    },
+    "ST01": {
+      "x": 5160.0,
+      "y": 8108.0,
+      "z": -637.809
+    },
+    "ST03": {
+      "x": 5320.0,
+      "y": 8108.0,
+      "z": -638.35
+    },
+    "ST05": {
+      "x": 5480.0,
+      "y": 8108.0,
+      "z": -641.984
+    },
+    "ST07": {
+      "x": 5640.0,
+      "y": 8108.0,
+      "z": -644.458
+    },
+    "ST09": {
+      "x": 5800.0,
+      "y": 8108.0,
+      "z": -658.879
+    },
+    "ST011": {
+      "x": 5960.0,
+      "y": 8108.0,
+      "z": -655.093
+    },
+    "ST11": {
+      "x": 5160.0,
+      "y": 8348.0,
+      "z": -684.46
+    },
+    "ST13": {
+      "x": 5320.0,
+      "y": 8348.0,
+      "z": -685.001
+    },
+    "ST17": {
+      "x": 5640.0,
+      "y": 8348.0,
+      "z": -691.11
+    },
+    "ST19": {
+      "x": 5800.0,
+      "y": 8348.0,
+      "z": -705.53
+    },
+    "ST111": {
+      "x": 5960.0,
+      "y": 8348.0,
+      "z": -701.744
+    }
+  },
+  "fileRows": [
+    {
+      "id": "col-Mid",
+      "name": "Mid",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-North",
+      "name": "North",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-South",
+      "name": "South",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Surface",
+      "name": "Surface",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+ "format": "asmlab-ducts",
+ "version": 1,
+ "data": {
+  "vnodes": [
+   {
+    "id": "V1",
+    "a": "SAMPLE|I",
+    "b": "SAMPLE|J1",
+    "t": 0.75
+   },
+   {
+    "id": "V2",
+    "a": "SAMPLE|J1",
+    "b": "SAMPLE|H1",
+    "t": 0.9
+   },
+   {
+    "id": "V3",
+    "a": "SAMPLE|I",
+    "b": "SAMPLE|J1",
+    "t": 0.8749999999999999
+   },
+   {
+    "id": "V4",
+    "a": "SAMPLE|J2",
+    "b": "SAMPLE|H2",
+    "t": 0.9
+   }
+  ],
+  "ducts": [
+   {
+    "id": "D1",
+    "name": "Duct 1",
+    "route": [
+     "V1",
+     "V3"
+    ],
+    "D_mm": 1220,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "left",
+    "vert": "roof",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN1",
+    "to": "DN3",
+    "pointPins": {
+     "V1": [
+      150,
+      2.215,
+      2.215
+     ],
+     "V3": [
+      174.01749999999998,
+      2.215,
+      2.1525
+     ],
+     "SAMPLE|J1": [
+      198.035,
+      2.215,
+      2.09
+     ],
+     "V2": [
+      198.035,
+      90,
+      1.9649999999999999
+     ]
+    },
+    "legOffsets": {},
+    "fans": [
+     {
+      "id": "F1",
+      "raw": 3,
+      "fanKind": "auxiliary",
+      "fanSource": "quadratic",
+      "fan": {
+       "name": "Main aux fan",
+       "source": "quadratic",
+       "controlMode": "curve",
+       "quadraticInputs": {
+        "P0": 3500,
+        "Q_duty": 25,
+        "P_duty": 2200,
+        "rho": 1.2,
+        "speedRps": 25
+       }
+      },
+      "fanOp": {
+       "Q": 32.24,
+       "P": 1342.2,
+       "airPower": 43.28,
+       "R_sys": 1.2912378361202619,
+       "inStall": false,
+       "reverseFlow": false,
+       "beyondCurve": false,
+       "rhoOp": 1.207734611269767,
+       "Q_max_curve": 41.020632707118345
+      }
+     }
+    ],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   },
+   {
+    "id": "D2",
+    "name": "Duct 2",
+    "route": [
+     "V3",
+     "SAMPLE|J1",
+     "V2"
+    ],
+    "D_mm": 1015,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "left",
+    "vert": "roof",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN3",
+    "to": "DN2",
+    "pointPins": {
+     "V1": [
+      150,
+      2.215,
+      2.215
+     ],
+     "V3": [
+      174.01749999999998,
+      2.215,
+      2.1525
+     ],
+     "SAMPLE|J1": [
+      198.035,
+      2.215,
+      2.09
+     ],
+     "V2": [
+      198.035,
+      90,
+      1.9649999999999999
+     ]
+    },
+    "legOffsets": {},
+    "fans": [],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   },
+   {
+    "id": "D3",
+    "name": "Duct 3",
+    "route": [
+     "V3",
+     "SAMPLE|J1",
+     "SAMPLE|J2",
+     "V4"
+    ],
+    "D_mm": 1015,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "right",
+    "vert": "floor",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN3",
+    "to": "DN4",
+    "pointPins": {},
+    "legOffsets": {},
+    "fans": [],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   }
+  ],
+  "ductNodes": [
+   {
+    "id": "DN1",
+    "host": "V1",
+    "p": null
+   },
+   {
+    "id": "DN2",
+    "host": "V2",
+    "p": null
+   },
+   {
+    "id": "DN3",
+    "host": "V3",
+    "p": [
+     174.01749999999998,
+     2.215,
+     2.1525
+    ]
+   },
+   {
+    "id": "DN4",
+    "host": "SAMPLE|J2",
+    "p": null
+   }
+  ],
+  "machines": [],
+  "assets": [],
+  "seq": {
+   "d": 3,
+   "c": 0,
+   "dn": 4,
+   "v": 4,
+   "m": 0,
+   "a": 0
+  }
+ }
+}

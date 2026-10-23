@@ -1,0 +1,82 @@
+{
+ "format": "asmlab-ducts",
+ "version": 1,
+ "data": {
+  "vnodes": [
+   {
+    "id": "V1",
+    "a": "SAMPLE|J",
+    "b": "SAMPLE|H",
+    "t": 0.9
+   }
+  ],
+  "ducts": [
+   {
+    "id": "D1",
+    "name": "Duct 1",
+    "route": [
+     "SAMPLE|J",
+     "V1"
+    ],
+    "D_mm": 760,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "left",
+    "vert": "roof",
+    "pipeLen": 3,
+    "kIn": 0,
+    "kOut": 0,
+    "from": "DN1",
+    "to": "DN2",
+    "pointPins": {},
+    "legOffsets": {},
+    "fans": [
+     {
+      "id": "F1",
+      "raw": 4,
+      "fanP": 500,
+      "fanKind": "auxiliary",
+      "fanOp": {
+       "Q": 9.79,
+       "P": 500,
+       "airPower": 4.9,
+       "R_sys": 5.213359582257185,
+       "inStall": false,
+       "reverseFlow": false,
+       "beyondCurve": false,
+       "rhoOp": 1.2015576078269685
+      }
+     }
+    ],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 20,
+     "section": 20
+    }
+   }
+  ],
+  "ductNodes": [
+   {
+    "id": "DN1",
+    "host": "SAMPLE|J",
+    "p": null
+   },
+   {
+    "id": "DN2",
+    "host": "V1",
+    "p": null
+   }
+  ],
+  "machines": [],
+  "assets": [],
+  "seq": {
+   "d": 1,
+   "c": 0,
+   "dn": 2,
+   "v": 1,
+   "m": 0,
+   "a": 0
+  }
+ }
+}

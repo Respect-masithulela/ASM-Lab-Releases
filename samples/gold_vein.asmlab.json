@@ -1,0 +1,4371 @@
+{
+  "projectName": "Gold vein \u2014 steep narrow stoping",
+  "blockModel": "gold_vein.dm",
+  "network": {
+    "nodes": [
+      {
+        "id": "SURF-IN",
+        "name": "Adit / decline",
+        "type": "intake",
+        "elevation": 940.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SURF-EX",
+        "name": "Return raise collar",
+        "type": "exhaust",
+        "elevation": 940.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "L0Y0",
+        "name": "HW 880/12080",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y0",
+        "name": "Vein 880/12080",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y1",
+        "name": "HW 880/12160",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y1",
+        "name": "Vein 880/12160",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "ST0Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 888.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y2",
+        "name": "HW 880/12240",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y2",
+        "name": "Vein 880/12240",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y3",
+        "name": "HW 880/12320",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y3",
+        "name": "Vein 880/12320",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "ST0Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 888.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y4",
+        "name": "HW 880/12400",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y4",
+        "name": "Vein 880/12400",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y5",
+        "name": "HW 880/12480",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y5",
+        "name": "Vein 880/12480",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "ST0Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 888.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y6",
+        "name": "HW 880/12560",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y6",
+        "name": "Vein 880/12560",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L0Y7",
+        "name": "HW 880/12640",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "V0Y7",
+        "name": "Vein 880/12640",
+        "type": "junction",
+        "elevation": 880.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "ST0Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 888.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 880"
+      },
+      {
+        "id": "L1Y0",
+        "name": "HW 820/12080",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y0",
+        "name": "Vein 820/12080",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y1",
+        "name": "HW 820/12160",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y1",
+        "name": "Vein 820/12160",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "ST1Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 828.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y2",
+        "name": "HW 820/12240",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y2",
+        "name": "Vein 820/12240",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y3",
+        "name": "HW 820/12320",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y3",
+        "name": "Vein 820/12320",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "ST1Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 828.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y4",
+        "name": "HW 820/12400",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y4",
+        "name": "Vein 820/12400",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y5",
+        "name": "HW 820/12480",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y5",
+        "name": "Vein 820/12480",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "ST1Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 828.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y6",
+        "name": "HW 820/12560",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y6",
+        "name": "Vein 820/12560",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L1Y7",
+        "name": "HW 820/12640",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "V1Y7",
+        "name": "Vein 820/12640",
+        "type": "junction",
+        "elevation": 820.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "ST1Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 828.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 820"
+      },
+      {
+        "id": "L2Y0",
+        "name": "HW 760/12080",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y0",
+        "name": "Vein 760/12080",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y1",
+        "name": "HW 760/12160",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y1",
+        "name": "Vein 760/12160",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "ST2Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 768.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y2",
+        "name": "HW 760/12240",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y2",
+        "name": "Vein 760/12240",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y3",
+        "name": "HW 760/12320",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y3",
+        "name": "Vein 760/12320",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "ST2Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 768.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y4",
+        "name": "HW 760/12400",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y4",
+        "name": "Vein 760/12400",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y5",
+        "name": "HW 760/12480",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y5",
+        "name": "Vein 760/12480",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "ST2Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 768.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y6",
+        "name": "HW 760/12560",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y6",
+        "name": "Vein 760/12560",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L2Y7",
+        "name": "HW 760/12640",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "V2Y7",
+        "name": "Vein 760/12640",
+        "type": "junction",
+        "elevation": 760.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "ST2Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 768.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 760"
+      },
+      {
+        "id": "L3Y0",
+        "name": "HW 700/12080",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y0",
+        "name": "Vein 700/12080",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y1",
+        "name": "HW 700/12160",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y1",
+        "name": "Vein 700/12160",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "ST3Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 708.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y2",
+        "name": "HW 700/12240",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y2",
+        "name": "Vein 700/12240",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y3",
+        "name": "HW 700/12320",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y3",
+        "name": "Vein 700/12320",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "ST3Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 708.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y4",
+        "name": "HW 700/12400",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y4",
+        "name": "Vein 700/12400",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y5",
+        "name": "HW 700/12480",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y5",
+        "name": "Vein 700/12480",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "ST3Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 708.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y6",
+        "name": "HW 700/12560",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y6",
+        "name": "Vein 700/12560",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L3Y7",
+        "name": "HW 700/12640",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "V3Y7",
+        "name": "Vein 700/12640",
+        "type": "junction",
+        "elevation": 700.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "ST3Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 708.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 700"
+      },
+      {
+        "id": "L4Y0",
+        "name": "HW 640/12080",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y0",
+        "name": "Vein 640/12080",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y1",
+        "name": "HW 640/12160",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y1",
+        "name": "Vein 640/12160",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "ST4Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 648.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y2",
+        "name": "HW 640/12240",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y2",
+        "name": "Vein 640/12240",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y3",
+        "name": "HW 640/12320",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y3",
+        "name": "Vein 640/12320",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "ST4Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 648.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y4",
+        "name": "HW 640/12400",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y4",
+        "name": "Vein 640/12400",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y5",
+        "name": "HW 640/12480",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y5",
+        "name": "Vein 640/12480",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "ST4Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 648.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y6",
+        "name": "HW 640/12560",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y6",
+        "name": "Vein 640/12560",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L4Y7",
+        "name": "HW 640/12640",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "V4Y7",
+        "name": "Vein 640/12640",
+        "type": "junction",
+        "elevation": 640.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "ST4Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 648.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 640"
+      },
+      {
+        "id": "L5Y0",
+        "name": "HW 580/12080",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y0",
+        "name": "Vein 580/12080",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y1",
+        "name": "HW 580/12160",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y1",
+        "name": "Vein 580/12160",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "ST5Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 588.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y2",
+        "name": "HW 580/12240",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y2",
+        "name": "Vein 580/12240",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y3",
+        "name": "HW 580/12320",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y3",
+        "name": "Vein 580/12320",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "ST5Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 588.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y4",
+        "name": "HW 580/12400",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y4",
+        "name": "Vein 580/12400",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y5",
+        "name": "HW 580/12480",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y5",
+        "name": "Vein 580/12480",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "ST5Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 588.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y6",
+        "name": "HW 580/12560",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y6",
+        "name": "Vein 580/12560",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L5Y7",
+        "name": "HW 580/12640",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "V5Y7",
+        "name": "Vein 580/12640",
+        "type": "junction",
+        "elevation": 580.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "ST5Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 588.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 580"
+      },
+      {
+        "id": "L6Y0",
+        "name": "HW 520/12080",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y0",
+        "name": "Vein 520/12080",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y1",
+        "name": "HW 520/12160",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y1",
+        "name": "Vein 520/12160",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "ST6Y1",
+        "name": "Stope 12160",
+        "type": "junction",
+        "elevation": 528.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y2",
+        "name": "HW 520/12240",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y2",
+        "name": "Vein 520/12240",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y3",
+        "name": "HW 520/12320",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y3",
+        "name": "Vein 520/12320",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "ST6Y3",
+        "name": "Stope 12320",
+        "type": "junction",
+        "elevation": 528.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y4",
+        "name": "HW 520/12400",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y4",
+        "name": "Vein 520/12400",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y5",
+        "name": "HW 520/12480",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y5",
+        "name": "Vein 520/12480",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "ST6Y5",
+        "name": "Stope 12480",
+        "type": "junction",
+        "elevation": 528.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y6",
+        "name": "HW 520/12560",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y6",
+        "name": "Vein 520/12560",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "L6Y7",
+        "name": "HW 520/12640",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "V6Y7",
+        "name": "Vein 520/12640",
+        "type": "junction",
+        "elevation": 520.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      },
+      {
+        "id": "ST6Y7",
+        "name": "Stope 12640",
+        "type": "junction",
+        "elevation": 528.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Level 520"
+      }
+    ],
+    "airways": [
+      {
+        "id": "XC0-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y0",
+        "toNode": "V0Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-1",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y0",
+        "toNode": "L0Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y1",
+        "toNode": "V0Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "STP0-1",
+        "name": "Vein stope",
+        "fromNode": "V0Y1",
+        "toNode": "ST0Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-2",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y1",
+        "toNode": "L0Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y2",
+        "toNode": "V0Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-3",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y2",
+        "toNode": "L0Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y3",
+        "toNode": "V0Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "STP0-3",
+        "name": "Vein stope",
+        "fromNode": "V0Y3",
+        "toNode": "ST0Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-4",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y3",
+        "toNode": "L0Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y4",
+        "toNode": "V0Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-5",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y4",
+        "toNode": "L0Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y5",
+        "toNode": "V0Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "STP0-5",
+        "name": "Vein stope",
+        "fromNode": "V0Y5",
+        "toNode": "ST0Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-6",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y5",
+        "toNode": "L0Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y6",
+        "toNode": "V0Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "HW0-7",
+        "name": "Level 880 hanging-wall drive",
+        "fromNode": "L0Y6",
+        "toNode": "L0Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC0-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L0Y7",
+        "toNode": "V0Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "STP0-7",
+        "name": "Vein stope",
+        "fromNode": "V0Y7",
+        "toNode": "ST0Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "XC1-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y0",
+        "toNode": "V1Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-1",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y0",
+        "toNode": "L1Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y1",
+        "toNode": "V1Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "STP1-1",
+        "name": "Vein stope",
+        "fromNode": "V1Y1",
+        "toNode": "ST1Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-2",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y1",
+        "toNode": "L1Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y2",
+        "toNode": "V1Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-3",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y2",
+        "toNode": "L1Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y3",
+        "toNode": "V1Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "STP1-3",
+        "name": "Vein stope",
+        "fromNode": "V1Y3",
+        "toNode": "ST1Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-4",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y3",
+        "toNode": "L1Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y4",
+        "toNode": "V1Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-5",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y4",
+        "toNode": "L1Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y5",
+        "toNode": "V1Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "STP1-5",
+        "name": "Vein stope",
+        "fromNode": "V1Y5",
+        "toNode": "ST1Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-6",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y5",
+        "toNode": "L1Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y6",
+        "toNode": "V1Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "HW1-7",
+        "name": "Level 820 hanging-wall drive",
+        "fromNode": "L1Y6",
+        "toNode": "L1Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC1-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L1Y7",
+        "toNode": "V1Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "STP1-7",
+        "name": "Vein stope",
+        "fromNode": "V1Y7",
+        "toNode": "ST1Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "XC2-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y0",
+        "toNode": "V2Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-1",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y0",
+        "toNode": "L2Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y1",
+        "toNode": "V2Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "STP2-1",
+        "name": "Vein stope",
+        "fromNode": "V2Y1",
+        "toNode": "ST2Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-2",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y1",
+        "toNode": "L2Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y2",
+        "toNode": "V2Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-3",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y2",
+        "toNode": "L2Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y3",
+        "toNode": "V2Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "STP2-3",
+        "name": "Vein stope",
+        "fromNode": "V2Y3",
+        "toNode": "ST2Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-4",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y3",
+        "toNode": "L2Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y4",
+        "toNode": "V2Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-5",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y4",
+        "toNode": "L2Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y5",
+        "toNode": "V2Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "STP2-5",
+        "name": "Vein stope",
+        "fromNode": "V2Y5",
+        "toNode": "ST2Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-6",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y5",
+        "toNode": "L2Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y6",
+        "toNode": "V2Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "HW2-7",
+        "name": "Level 760 hanging-wall drive",
+        "fromNode": "L2Y6",
+        "toNode": "L2Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC2-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L2Y7",
+        "toNode": "V2Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "STP2-7",
+        "name": "Vein stope",
+        "fromNode": "V2Y7",
+        "toNode": "ST2Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "XC3-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y0",
+        "toNode": "V3Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-1",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y0",
+        "toNode": "L3Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y1",
+        "toNode": "V3Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "STP3-1",
+        "name": "Vein stope",
+        "fromNode": "V3Y1",
+        "toNode": "ST3Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-2",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y1",
+        "toNode": "L3Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y2",
+        "toNode": "V3Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-3",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y2",
+        "toNode": "L3Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y3",
+        "toNode": "V3Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "STP3-3",
+        "name": "Vein stope",
+        "fromNode": "V3Y3",
+        "toNode": "ST3Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-4",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y3",
+        "toNode": "L3Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y4",
+        "toNode": "V3Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-5",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y4",
+        "toNode": "L3Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y5",
+        "toNode": "V3Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "STP3-5",
+        "name": "Vein stope",
+        "fromNode": "V3Y5",
+        "toNode": "ST3Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-6",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y5",
+        "toNode": "L3Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y6",
+        "toNode": "V3Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "HW3-7",
+        "name": "Level 700 hanging-wall drive",
+        "fromNode": "L3Y6",
+        "toNode": "L3Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC3-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L3Y7",
+        "toNode": "V3Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "STP3-7",
+        "name": "Vein stope",
+        "fromNode": "V3Y7",
+        "toNode": "ST3Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "XC4-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y0",
+        "toNode": "V4Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-1",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y0",
+        "toNode": "L4Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y1",
+        "toNode": "V4Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "STP4-1",
+        "name": "Vein stope",
+        "fromNode": "V4Y1",
+        "toNode": "ST4Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-2",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y1",
+        "toNode": "L4Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y2",
+        "toNode": "V4Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-3",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y2",
+        "toNode": "L4Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y3",
+        "toNode": "V4Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "STP4-3",
+        "name": "Vein stope",
+        "fromNode": "V4Y3",
+        "toNode": "ST4Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-4",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y3",
+        "toNode": "L4Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y4",
+        "toNode": "V4Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-5",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y4",
+        "toNode": "L4Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y5",
+        "toNode": "V4Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "STP4-5",
+        "name": "Vein stope",
+        "fromNode": "V4Y5",
+        "toNode": "ST4Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-6",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y5",
+        "toNode": "L4Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y6",
+        "toNode": "V4Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "HW4-7",
+        "name": "Level 640 hanging-wall drive",
+        "fromNode": "L4Y6",
+        "toNode": "L4Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC4-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L4Y7",
+        "toNode": "V4Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "STP4-7",
+        "name": "Vein stope",
+        "fromNode": "V4Y7",
+        "toNode": "ST4Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "XC5-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y0",
+        "toNode": "V5Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-1",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y0",
+        "toNode": "L5Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y1",
+        "toNode": "V5Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "STP5-1",
+        "name": "Vein stope",
+        "fromNode": "V5Y1",
+        "toNode": "ST5Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-2",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y1",
+        "toNode": "L5Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y2",
+        "toNode": "V5Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-3",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y2",
+        "toNode": "L5Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y3",
+        "toNode": "V5Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "STP5-3",
+        "name": "Vein stope",
+        "fromNode": "V5Y3",
+        "toNode": "ST5Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-4",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y3",
+        "toNode": "L5Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y4",
+        "toNode": "V5Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-5",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y4",
+        "toNode": "L5Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y5",
+        "toNode": "V5Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "STP5-5",
+        "name": "Vein stope",
+        "fromNode": "V5Y5",
+        "toNode": "ST5Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-6",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y5",
+        "toNode": "L5Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y6",
+        "toNode": "V5Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "HW5-7",
+        "name": "Level 580 hanging-wall drive",
+        "fromNode": "L5Y6",
+        "toNode": "L5Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC5-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L5Y7",
+        "toNode": "V5Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "STP5-7",
+        "name": "Vein stope",
+        "fromNode": "V5Y7",
+        "toNode": "ST5Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "XC6-0",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y0",
+        "toNode": "V6Y0",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-1",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y0",
+        "toNode": "L6Y1",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-1",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y1",
+        "toNode": "V6Y1",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "STP6-1",
+        "name": "Vein stope",
+        "fromNode": "V6Y1",
+        "toNode": "ST6Y1",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-2",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y1",
+        "toNode": "L6Y2",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-2",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y2",
+        "toNode": "V6Y2",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-3",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y2",
+        "toNode": "L6Y3",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-3",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y3",
+        "toNode": "V6Y3",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "STP6-3",
+        "name": "Vein stope",
+        "fromNode": "V6Y3",
+        "toNode": "ST6Y3",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-4",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y3",
+        "toNode": "L6Y4",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-4",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y4",
+        "toNode": "V6Y4",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-5",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y4",
+        "toNode": "L6Y5",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-5",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y5",
+        "toNode": "V6Y5",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "STP6-5",
+        "name": "Vein stope",
+        "fromNode": "V6Y5",
+        "toNode": "ST6Y5",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-6",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y5",
+        "toNode": "L6Y6",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-6",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y6",
+        "toNode": "V6Y6",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "HW6-7",
+        "name": "Level 520 hanging-wall drive",
+        "fromNode": "L6Y6",
+        "toNode": "L6Y7",
+        "length": 80.0,
+        "width": 3.8,
+        "height": 3.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "XC6-7",
+        "name": "Crosscut to vein",
+        "fromNode": "L6Y7",
+        "toNode": "V6Y7",
+        "length": 12.0,
+        "width": 3.2,
+        "height": 3.0,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "STP6-7",
+        "name": "Vein stope",
+        "fromNode": "V6Y7",
+        "toNode": "ST6Y7",
+        "length": 8.94,
+        "width": 1.8,
+        "height": 2.4,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Level_520"
+      },
+      {
+        "id": "VR0-0",
+        "name": "On-vein raise",
+        "fromNode": "V0Y0",
+        "toNode": "V1Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "VR1-0",
+        "name": "On-vein raise",
+        "fromNode": "V1Y0",
+        "toNode": "V2Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "VR2-0",
+        "name": "On-vein raise",
+        "fromNode": "V2Y0",
+        "toNode": "V3Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "VR3-0",
+        "name": "On-vein raise",
+        "fromNode": "V3Y0",
+        "toNode": "V4Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "VR4-0",
+        "name": "On-vein raise",
+        "fromNode": "V4Y0",
+        "toNode": "V5Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "VR5-0",
+        "name": "On-vein raise",
+        "fromNode": "V5Y0",
+        "toNode": "V6Y0",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "VR0-2",
+        "name": "On-vein raise",
+        "fromNode": "V0Y2",
+        "toNode": "V1Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "VR1-2",
+        "name": "On-vein raise",
+        "fromNode": "V1Y2",
+        "toNode": "V2Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "VR2-2",
+        "name": "On-vein raise",
+        "fromNode": "V2Y2",
+        "toNode": "V3Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "VR3-2",
+        "name": "On-vein raise",
+        "fromNode": "V3Y2",
+        "toNode": "V4Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "VR4-2",
+        "name": "On-vein raise",
+        "fromNode": "V4Y2",
+        "toNode": "V5Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "VR5-2",
+        "name": "On-vein raise",
+        "fromNode": "V5Y2",
+        "toNode": "V6Y2",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "VR0-4",
+        "name": "On-vein raise",
+        "fromNode": "V0Y4",
+        "toNode": "V1Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "VR1-4",
+        "name": "On-vein raise",
+        "fromNode": "V1Y4",
+        "toNode": "V2Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "VR2-4",
+        "name": "On-vein raise",
+        "fromNode": "V2Y4",
+        "toNode": "V3Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "VR3-4",
+        "name": "On-vein raise",
+        "fromNode": "V3Y4",
+        "toNode": "V4Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "VR4-4",
+        "name": "On-vein raise",
+        "fromNode": "V4Y4",
+        "toNode": "V5Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "VR5-4",
+        "name": "On-vein raise",
+        "fromNode": "V5Y4",
+        "toNode": "V6Y4",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "VR0-6",
+        "name": "On-vein raise",
+        "fromNode": "V0Y6",
+        "toNode": "V1Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_880"
+      },
+      {
+        "id": "VR1-6",
+        "name": "On-vein raise",
+        "fromNode": "V1Y6",
+        "toNode": "V2Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_820"
+      },
+      {
+        "id": "VR2-6",
+        "name": "On-vein raise",
+        "fromNode": "V2Y6",
+        "toNode": "V3Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_760"
+      },
+      {
+        "id": "VR3-6",
+        "name": "On-vein raise",
+        "fromNode": "V3Y6",
+        "toNode": "V4Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_700"
+      },
+      {
+        "id": "VR4-6",
+        "name": "On-vein raise",
+        "fromNode": "V4Y6",
+        "toNode": "V5Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_640"
+      },
+      {
+        "id": "VR5-6",
+        "name": "On-vein raise",
+        "fromNode": "V5Y6",
+        "toNode": "V6Y6",
+        "length": 64.71,
+        "width": 2.4,
+        "height": 2.4,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.4,
+        "collectionId": "col-Level_580"
+      },
+      {
+        "id": "DEC",
+        "name": "Access decline",
+        "fromNode": "SURF-IN",
+        "toNode": "L0Y0",
+        "length": 72.21,
+        "width": 4.5,
+        "height": 4.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Surface"
+      },
+      {
+        "id": "RET",
+        "name": "Return raise",
+        "fromNode": "L0Y7",
+        "toNode": "SURF-EX",
+        "length": 72.21,
+        "width": 3.8,
+        "height": 3.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.8,
+        "collectionId": "col-Surface"
+      }
+    ],
+    "fans": [
+      {
+        "id": "F-RET",
+        "airwayId": "RET",
+        "name": "Vein return fan",
+        "rhoRef": 1.2,
+        "points": [
+          {
+            "Q": 0,
+            "P": 320.0
+          },
+          {
+            "Q": 20.0,
+            "P": 309.0
+          },
+          {
+            "Q": 40.0,
+            "P": 276.0
+          },
+          {
+            "Q": 60.0,
+            "P": 221.0
+          },
+          {
+            "Q": 80,
+            "P": 144.0
+          },
+          {
+            "Q": 92.0,
+            "P": 87.2
+          }
+        ]
+      }
+    ],
+    "regulators": [
+      {
+        "id": "R-L3",
+        "name": "Level 700 regulator",
+        "airwayId": "HW3-4",
+        "status": "open",
+        "mode": "fixed-area",
+        "area": 6.0
+      }
+    ]
+  },
+  "nodePositions": {
+    "SURF-IN": {
+      "x": 15023.839,
+      "y": 12040,
+      "z": 940.0
+    },
+    "SURF-EX": {
+      "x": 15023.839,
+      "y": 12680,
+      "z": 940.0
+    },
+    "L0Y0": {
+      "x": 15020.081,
+      "y": 12080,
+      "z": 880.0
+    },
+    "V0Y0": {
+      "x": 15008.081,
+      "y": 12080,
+      "z": 880.0
+    },
+    "L0Y1": {
+      "x": 15020.081,
+      "y": 12160,
+      "z": 880.0
+    },
+    "V0Y1": {
+      "x": 15008.081,
+      "y": 12160,
+      "z": 880.0
+    },
+    "ST0Y1": {
+      "x": 15004.081,
+      "y": 12160,
+      "z": 888.0
+    },
+    "L0Y2": {
+      "x": 15020.081,
+      "y": 12240,
+      "z": 880.0
+    },
+    "V0Y2": {
+      "x": 15008.081,
+      "y": 12240,
+      "z": 880.0
+    },
+    "L0Y3": {
+      "x": 15020.081,
+      "y": 12320,
+      "z": 880.0
+    },
+    "V0Y3": {
+      "x": 15008.081,
+      "y": 12320,
+      "z": 880.0
+    },
+    "ST0Y3": {
+      "x": 15004.081,
+      "y": 12320,
+      "z": 888.0
+    },
+    "L0Y4": {
+      "x": 15020.081,
+      "y": 12400,
+      "z": 880.0
+    },
+    "V0Y4": {
+      "x": 15008.081,
+      "y": 12400,
+      "z": 880.0
+    },
+    "L0Y5": {
+      "x": 15020.081,
+      "y": 12480,
+      "z": 880.0
+    },
+    "V0Y5": {
+      "x": 15008.081,
+      "y": 12480,
+      "z": 880.0
+    },
+    "ST0Y5": {
+      "x": 15004.081,
+      "y": 12480,
+      "z": 888.0
+    },
+    "L0Y6": {
+      "x": 15020.081,
+      "y": 12560,
+      "z": 880.0
+    },
+    "V0Y6": {
+      "x": 15008.081,
+      "y": 12560,
+      "z": 880.0
+    },
+    "L0Y7": {
+      "x": 15020.081,
+      "y": 12640,
+      "z": 880.0
+    },
+    "V0Y7": {
+      "x": 15008.081,
+      "y": 12640,
+      "z": 880.0
+    },
+    "ST0Y7": {
+      "x": 15004.081,
+      "y": 12640,
+      "z": 888.0
+    },
+    "L1Y0": {
+      "x": 15044.322,
+      "y": 12080,
+      "z": 820.0
+    },
+    "V1Y0": {
+      "x": 15032.322,
+      "y": 12080,
+      "z": 820.0
+    },
+    "L1Y1": {
+      "x": 15044.322,
+      "y": 12160,
+      "z": 820.0
+    },
+    "V1Y1": {
+      "x": 15032.322,
+      "y": 12160,
+      "z": 820.0
+    },
+    "ST1Y1": {
+      "x": 15028.322,
+      "y": 12160,
+      "z": 828.0
+    },
+    "L1Y2": {
+      "x": 15044.322,
+      "y": 12240,
+      "z": 820.0
+    },
+    "V1Y2": {
+      "x": 15032.322,
+      "y": 12240,
+      "z": 820.0
+    },
+    "L1Y3": {
+      "x": 15044.322,
+      "y": 12320,
+      "z": 820.0
+    },
+    "V1Y3": {
+      "x": 15032.322,
+      "y": 12320,
+      "z": 820.0
+    },
+    "ST1Y3": {
+      "x": 15028.322,
+      "y": 12320,
+      "z": 828.0
+    },
+    "L1Y4": {
+      "x": 15044.322,
+      "y": 12400,
+      "z": 820.0
+    },
+    "V1Y4": {
+      "x": 15032.322,
+      "y": 12400,
+      "z": 820.0
+    },
+    "L1Y5": {
+      "x": 15044.322,
+      "y": 12480,
+      "z": 820.0
+    },
+    "V1Y5": {
+      "x": 15032.322,
+      "y": 12480,
+      "z": 820.0
+    },
+    "ST1Y5": {
+      "x": 15028.322,
+      "y": 12480,
+      "z": 828.0
+    },
+    "L1Y6": {
+      "x": 15044.322,
+      "y": 12560,
+      "z": 820.0
+    },
+    "V1Y6": {
+      "x": 15032.322,
+      "y": 12560,
+      "z": 820.0
+    },
+    "L1Y7": {
+      "x": 15044.322,
+      "y": 12640,
+      "z": 820.0
+    },
+    "V1Y7": {
+      "x": 15032.322,
+      "y": 12640,
+      "z": 820.0
+    },
+    "ST1Y7": {
+      "x": 15028.322,
+      "y": 12640,
+      "z": 828.0
+    },
+    "L2Y0": {
+      "x": 15068.564,
+      "y": 12080,
+      "z": 760.0
+    },
+    "V2Y0": {
+      "x": 15056.564,
+      "y": 12080,
+      "z": 760.0
+    },
+    "L2Y1": {
+      "x": 15068.564,
+      "y": 12160,
+      "z": 760.0
+    },
+    "V2Y1": {
+      "x": 15056.564,
+      "y": 12160,
+      "z": 760.0
+    },
+    "ST2Y1": {
+      "x": 15052.564,
+      "y": 12160,
+      "z": 768.0
+    },
+    "L2Y2": {
+      "x": 15068.564,
+      "y": 12240,
+      "z": 760.0
+    },
+    "V2Y2": {
+      "x": 15056.564,
+      "y": 12240,
+      "z": 760.0
+    },
+    "L2Y3": {
+      "x": 15068.564,
+      "y": 12320,
+      "z": 760.0
+    },
+    "V2Y3": {
+      "x": 15056.564,
+      "y": 12320,
+      "z": 760.0
+    },
+    "ST2Y3": {
+      "x": 15052.564,
+      "y": 12320,
+      "z": 768.0
+    },
+    "L2Y4": {
+      "x": 15068.564,
+      "y": 12400,
+      "z": 760.0
+    },
+    "V2Y4": {
+      "x": 15056.564,
+      "y": 12400,
+      "z": 760.0
+    },
+    "L2Y5": {
+      "x": 15068.564,
+      "y": 12480,
+      "z": 760.0
+    },
+    "V2Y5": {
+      "x": 15056.564,
+      "y": 12480,
+      "z": 760.0
+    },
+    "ST2Y5": {
+      "x": 15052.564,
+      "y": 12480,
+      "z": 768.0
+    },
+    "L2Y6": {
+      "x": 15068.564,
+      "y": 12560,
+      "z": 760.0
+    },
+    "V2Y6": {
+      "x": 15056.564,
+      "y": 12560,
+      "z": 760.0
+    },
+    "L2Y7": {
+      "x": 15068.564,
+      "y": 12640,
+      "z": 760.0
+    },
+    "V2Y7": {
+      "x": 15056.564,
+      "y": 12640,
+      "z": 760.0
+    },
+    "ST2Y7": {
+      "x": 15052.564,
+      "y": 12640,
+      "z": 768.0
+    },
+    "L3Y0": {
+      "x": 15092.805,
+      "y": 12080,
+      "z": 700.0
+    },
+    "V3Y0": {
+      "x": 15080.805,
+      "y": 12080,
+      "z": 700.0
+    },
+    "L3Y1": {
+      "x": 15092.805,
+      "y": 12160,
+      "z": 700.0
+    },
+    "V3Y1": {
+      "x": 15080.805,
+      "y": 12160,
+      "z": 700.0
+    },
+    "ST3Y1": {
+      "x": 15076.805,
+      "y": 12160,
+      "z": 708.0
+    },
+    "L3Y2": {
+      "x": 15092.805,
+      "y": 12240,
+      "z": 700.0
+    },
+    "V3Y2": {
+      "x": 15080.805,
+      "y": 12240,
+      "z": 700.0
+    },
+    "L3Y3": {
+      "x": 15092.805,
+      "y": 12320,
+      "z": 700.0
+    },
+    "V3Y3": {
+      "x": 15080.805,
+      "y": 12320,
+      "z": 700.0
+    },
+    "ST3Y3": {
+      "x": 15076.805,
+      "y": 12320,
+      "z": 708.0
+    },
+    "L3Y4": {
+      "x": 15092.805,
+      "y": 12400,
+      "z": 700.0
+    },
+    "V3Y4": {
+      "x": 15080.805,
+      "y": 12400,
+      "z": 700.0
+    },
+    "L3Y5": {
+      "x": 15092.805,
+      "y": 12480,
+      "z": 700.0
+    },
+    "V3Y5": {
+      "x": 15080.805,
+      "y": 12480,
+      "z": 700.0
+    },
+    "ST3Y5": {
+      "x": 15076.805,
+      "y": 12480,
+      "z": 708.0
+    },
+    "L3Y6": {
+      "x": 15092.805,
+      "y": 12560,
+      "z": 700.0
+    },
+    "V3Y6": {
+      "x": 15080.805,
+      "y": 12560,
+      "z": 700.0
+    },
+    "L3Y7": {
+      "x": 15092.805,
+      "y": 12640,
+      "z": 700.0
+    },
+    "V3Y7": {
+      "x": 15080.805,
+      "y": 12640,
+      "z": 700.0
+    },
+    "ST3Y7": {
+      "x": 15076.805,
+      "y": 12640,
+      "z": 708.0
+    },
+    "L4Y0": {
+      "x": 15117.047,
+      "y": 12080,
+      "z": 640.0
+    },
+    "V4Y0": {
+      "x": 15105.047,
+      "y": 12080,
+      "z": 640.0
+    },
+    "L4Y1": {
+      "x": 15117.047,
+      "y": 12160,
+      "z": 640.0
+    },
+    "V4Y1": {
+      "x": 15105.047,
+      "y": 12160,
+      "z": 640.0
+    },
+    "ST4Y1": {
+      "x": 15101.047,
+      "y": 12160,
+      "z": 648.0
+    },
+    "L4Y2": {
+      "x": 15117.047,
+      "y": 12240,
+      "z": 640.0
+    },
+    "V4Y2": {
+      "x": 15105.047,
+      "y": 12240,
+      "z": 640.0
+    },
+    "L4Y3": {
+      "x": 15117.047,
+      "y": 12320,
+      "z": 640.0
+    },
+    "V4Y3": {
+      "x": 15105.047,
+      "y": 12320,
+      "z": 640.0
+    },
+    "ST4Y3": {
+      "x": 15101.047,
+      "y": 12320,
+      "z": 648.0
+    },
+    "L4Y4": {
+      "x": 15117.047,
+      "y": 12400,
+      "z": 640.0
+    },
+    "V4Y4": {
+      "x": 15105.047,
+      "y": 12400,
+      "z": 640.0
+    },
+    "L4Y5": {
+      "x": 15117.047,
+      "y": 12480,
+      "z": 640.0
+    },
+    "V4Y5": {
+      "x": 15105.047,
+      "y": 12480,
+      "z": 640.0
+    },
+    "ST4Y5": {
+      "x": 15101.047,
+      "y": 12480,
+      "z": 648.0
+    },
+    "L4Y6": {
+      "x": 15117.047,
+      "y": 12560,
+      "z": 640.0
+    },
+    "V4Y6": {
+      "x": 15105.047,
+      "y": 12560,
+      "z": 640.0
+    },
+    "L4Y7": {
+      "x": 15117.047,
+      "y": 12640,
+      "z": 640.0
+    },
+    "V4Y7": {
+      "x": 15105.047,
+      "y": 12640,
+      "z": 640.0
+    },
+    "ST4Y7": {
+      "x": 15101.047,
+      "y": 12640,
+      "z": 648.0
+    },
+    "L5Y0": {
+      "x": 15141.288,
+      "y": 12080,
+      "z": 580.0
+    },
+    "V5Y0": {
+      "x": 15129.288,
+      "y": 12080,
+      "z": 580.0
+    },
+    "L5Y1": {
+      "x": 15141.288,
+      "y": 12160,
+      "z": 580.0
+    },
+    "V5Y1": {
+      "x": 15129.288,
+      "y": 12160,
+      "z": 580.0
+    },
+    "ST5Y1": {
+      "x": 15125.288,
+      "y": 12160,
+      "z": 588.0
+    },
+    "L5Y2": {
+      "x": 15141.288,
+      "y": 12240,
+      "z": 580.0
+    },
+    "V5Y2": {
+      "x": 15129.288,
+      "y": 12240,
+      "z": 580.0
+    },
+    "L5Y3": {
+      "x": 15141.288,
+      "y": 12320,
+      "z": 580.0
+    },
+    "V5Y3": {
+      "x": 15129.288,
+      "y": 12320,
+      "z": 580.0
+    },
+    "ST5Y3": {
+      "x": 15125.288,
+      "y": 12320,
+      "z": 588.0
+    },
+    "L5Y4": {
+      "x": 15141.288,
+      "y": 12400,
+      "z": 580.0
+    },
+    "V5Y4": {
+      "x": 15129.288,
+      "y": 12400,
+      "z": 580.0
+    },
+    "L5Y5": {
+      "x": 15141.288,
+      "y": 12480,
+      "z": 580.0
+    },
+    "V5Y5": {
+      "x": 15129.288,
+      "y": 12480,
+      "z": 580.0
+    },
+    "ST5Y5": {
+      "x": 15125.288,
+      "y": 12480,
+      "z": 588.0
+    },
+    "L5Y6": {
+      "x": 15141.288,
+      "y": 12560,
+      "z": 580.0
+    },
+    "V5Y6": {
+      "x": 15129.288,
+      "y": 12560,
+      "z": 580.0
+    },
+    "L5Y7": {
+      "x": 15141.288,
+      "y": 12640,
+      "z": 580.0
+    },
+    "V5Y7": {
+      "x": 15129.288,
+      "y": 12640,
+      "z": 580.0
+    },
+    "ST5Y7": {
+      "x": 15125.288,
+      "y": 12640,
+      "z": 588.0
+    },
+    "L6Y0": {
+      "x": 15165.53,
+      "y": 12080,
+      "z": 520.0
+    },
+    "V6Y0": {
+      "x": 15153.53,
+      "y": 12080,
+      "z": 520.0
+    },
+    "L6Y1": {
+      "x": 15165.53,
+      "y": 12160,
+      "z": 520.0
+    },
+    "V6Y1": {
+      "x": 15153.53,
+      "y": 12160,
+      "z": 520.0
+    },
+    "ST6Y1": {
+      "x": 15149.53,
+      "y": 12160,
+      "z": 528.0
+    },
+    "L6Y2": {
+      "x": 15165.53,
+      "y": 12240,
+      "z": 520.0
+    },
+    "V6Y2": {
+      "x": 15153.53,
+      "y": 12240,
+      "z": 520.0
+    },
+    "L6Y3": {
+      "x": 15165.53,
+      "y": 12320,
+      "z": 520.0
+    },
+    "V6Y3": {
+      "x": 15153.53,
+      "y": 12320,
+      "z": 520.0
+    },
+    "ST6Y3": {
+      "x": 15149.53,
+      "y": 12320,
+      "z": 528.0
+    },
+    "L6Y4": {
+      "x": 15165.53,
+      "y": 12400,
+      "z": 520.0
+    },
+    "V6Y4": {
+      "x": 15153.53,
+      "y": 12400,
+      "z": 520.0
+    },
+    "L6Y5": {
+      "x": 15165.53,
+      "y": 12480,
+      "z": 520.0
+    },
+    "V6Y5": {
+      "x": 15153.53,
+      "y": 12480,
+      "z": 520.0
+    },
+    "ST6Y5": {
+      "x": 15149.53,
+      "y": 12480,
+      "z": 528.0
+    },
+    "L6Y6": {
+      "x": 15165.53,
+      "y": 12560,
+      "z": 520.0
+    },
+    "V6Y6": {
+      "x": 15153.53,
+      "y": 12560,
+      "z": 520.0
+    },
+    "L6Y7": {
+      "x": 15165.53,
+      "y": 12640,
+      "z": 520.0
+    },
+    "V6Y7": {
+      "x": 15153.53,
+      "y": 12640,
+      "z": 520.0
+    },
+    "ST6Y7": {
+      "x": 15149.53,
+      "y": 12640,
+      "z": 528.0
+    }
+  },
+  "fileRows": [
+    {
+      "id": "col-Level_520",
+      "name": "Level 520",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_580",
+      "name": "Level 580",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_640",
+      "name": "Level 640",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_700",
+      "name": "Level 700",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_760",
+      "name": "Level 760",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_820",
+      "name": "Level 820",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Level_880",
+      "name": "Level 880",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Surface",
+      "name": "Surface",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    }
+  ]
+}

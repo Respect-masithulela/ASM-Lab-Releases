@@ -1,0 +1,53 @@
+{
+ "projectName": "Closed tunnel, duct recirculating",
+ "notes": "A 200 m tunnel (6 × 6 m) closed at both ends: no intake, no exhaust. A Ø1220 mm duct runs from 10 m to 190 m with a fan held at 50 m³/s. The air goes out through the duct and back along the tunnel. Mass conservation: the same mass flow in the duct inlet, the duct outlet and the tunnel between the duct ends; none beyond the duct ends.",
+ "expected": {
+  "duct_mass_in_kg_s": "= outlet",
+  "tunnel_return_kg_s": "= duct mass flow, opposite direction",
+  "tunnel_beyond_duct_ends": 0,
+  "basis": "closed system, no leakage: continuity (mass in = mass out at every node)"
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "A",
+    "x": 0,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B",
+    "x": 200,
+    "y": 0,
+    "elevation": 0
+   }
+  ],
+  "airways": [
+   {
+    "id": "T",
+    "name": "T",
+    "fromNode": "A",
+    "toNode": "B",
+    "width": 6,
+    "height": 6,
+    "frictionFactor": 0.012,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 200
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ },
+ "nodePositions": {
+  "A": {
+   "x": 0,
+   "y": 0
+  },
+  "B": {
+   "x": 200,
+   "y": 0
+  }
+ }
+}

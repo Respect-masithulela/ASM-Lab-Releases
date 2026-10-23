@@ -1,0 +1,104 @@
+{
+ "projectName": "Lit 4 forcing duct with leakage",
+ "notes": "Layout: main airway I-J-E with 100 Pa across it, and a blind heading J-H (80 m, 5 × 5 m). A Ø760 mm duct (k = 0.003, no entry or exit loss) runs 72 m from J into the heading; the air it delivers returns along the heading to J. Same duct and 500 Pa fan as Lit 3, with leakage Lc = 20 m³/s per km at 1 kPa, a leak station every 18 m (Q_leak = Lc·L/1000·√(Δp/1000), the leakage law of the Vent Calcs workbook, ref R8 in the Duct tab). Checks: mass in = mass out + leakage mass; each leak obeys the law at its own pressure difference.",
+ "expected": {
+  "inlet_m3_s": 9.794,
+  "outlet_m3_s": 9.275,
+  "leakage_m3_s": 0.519,
+  "leak_stations": 3,
+  "basis": "independent incompressible Newton solve of the same 3-station network: Qin 9.794, Qout 9.275, leakage 0.519 m³/s (the app differs by ≤0.2% because it follows the density change)"
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "I",
+    "x": 0,
+    "y": 0,
+    "elevation": 0,
+    "type": "intake",
+    "fixedPressure": 101425
+   },
+   {
+    "id": "J",
+    "x": 100,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "E",
+    "x": 200,
+    "y": 0,
+    "elevation": 0,
+    "type": "exhaust",
+    "fixedPressure": 101325
+   },
+   {
+    "id": "H",
+    "x": 100,
+    "y": 80,
+    "elevation": 0
+   }
+  ],
+  "airways": [
+   {
+    "id": "main1",
+    "name": "main1",
+    "fromNode": "I",
+    "toNode": "J",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100
+   },
+   {
+    "id": "main2",
+    "name": "main2",
+    "fromNode": "J",
+    "toNode": "E",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100
+   },
+   {
+    "id": "heading",
+    "name": "heading",
+    "fromNode": "J",
+    "toNode": "H",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 80
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ },
+ "nodePositions": {
+  "I": {
+   "x": 0,
+   "y": 0
+  },
+  "J": {
+   "x": 100,
+   "y": 0
+  },
+  "E": {
+   "x": 200,
+   "y": 0
+  },
+  "H": {
+   "x": 100,
+   "y": 80
+  }
+ }
+}
