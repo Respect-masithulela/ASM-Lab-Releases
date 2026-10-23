@@ -1,0 +1,105 @@
+{
+ "_source": "Source tool Libraries > Rock library of each example network, read 12 Oct 2026. k W/m.C, rho kg/m3, c J/kg.C",
+ "_wetness": {
+  "_source": "source tool 'Ratings - All.pdf', rock surface wetness: fraction of perimeter wet, band midpoints",
+  "Very dry": 0.0,
+  "Dry": 0.1,
+  "Damp": 0.275,
+  "Wet": 0.55,
+  "Very wet": 0.85
+ },
+ "Coal mine": {
+  "shale": [
+   3.1,
+   2620,
+   921
+  ]
+ },
+ "Metal mine": {
+  "quartzite": [
+   5,
+   3000,
+   780
+  ],
+  "Steel duct": [
+   20,
+   8000,
+   420
+  ]
+ },
+ "Platinum mine": {
+  "Merensky": [
+   3.3,
+   3200,
+   800
+  ],
+  "RTB Surround": [
+   2,
+   2900,
+   766
+  ]
+ },
+ "Gold mine": {
+  "quartzite": [
+   5,
+   3000,
+   780
+  ],
+  "Reef": [
+   3.1,
+   2850,
+   880
+  ],
+  "Waste": [
+   5.74,
+   2670,
+   850
+  ],
+  "Steel duct": [
+   20,
+   8000,
+   420
+  ]
+ },
+ "Secondary ventilation": {
+  "quartzite": [
+   5,
+   3000,
+   780
+  ],
+  "Mudstone": [
+   2.45,
+   2200,
+   800
+  ],
+  "Kimberlite": [
+   3,
+   2960,
+   920
+  ]
+ },
+ "What-if": {
+  "quartzite": [
+   5,
+   3000,
+   780
+  ],
+  "sandstone": [
+   1.97,
+   2470,
+   837
+  ]
+ },
+ "Joel mine": {
+  "quartzite": [
+   5,
+   3000,
+   780
+  ],
+  "Steel duct": [
+   20,
+   8000,
+   420
+  ]
+ }
+}
