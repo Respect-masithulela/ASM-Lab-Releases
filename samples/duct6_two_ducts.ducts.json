@@ -1,0 +1,184 @@
+{
+ "format": "asmlab-ducts",
+ "version": 1,
+ "data": {
+  "vnodes": [
+   {
+    "id": "V1",
+    "a": "SAMPLE|I",
+    "b": "SAMPLE|J1",
+    "t": 0.75
+   },
+   {
+    "id": "V2",
+    "a": "SAMPLE|J1",
+    "b": "SAMPLE|H1",
+    "t": 0.9
+   },
+   {
+    "id": "V3",
+    "a": "SAMPLE|I",
+    "b": "SAMPLE|J1",
+    "t": 0.85
+   },
+   {
+    "id": "V4",
+    "a": "SAMPLE|J2",
+    "b": "SAMPLE|H2",
+    "t": 0.9
+   }
+  ],
+  "ducts": [
+   {
+    "id": "D1",
+    "name": "Duct 1",
+    "route": [
+     "V1",
+     "V3",
+     "SAMPLE|J1",
+     "V2"
+    ],
+    "D_mm": 1015,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "left",
+    "vert": "roof",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN1",
+    "to": "DN2",
+    "pointPins": {},
+    "legOffsets": {},
+    "fans": [
+     {
+      "id": "F1",
+      "raw": 3,
+      "fanKind": "auxiliary",
+      "fanSource": "quadratic",
+      "fan": {
+       "name": "Fan heading 1",
+       "source": "quadratic",
+       "controlMode": "curve",
+       "quadraticInputs": {
+        "P0": 3000,
+        "Q_duty": 15,
+        "P_duty": 2000,
+        "rho": 1.2,
+        "speedRps": 25
+       }
+      },
+      "fanOp": {
+       "Q": 19.13,
+       "P": 1375.9,
+       "airPower": 26.32,
+       "R_sys": 3.760067119734645,
+       "inStall": false,
+       "reverseFlow": false,
+       "beyondCurve": false,
+       "rhoOp": 1.2080529279415417,
+       "Q_max_curve": 25.98076211353316
+      }
+     }
+    ],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   },
+   {
+    "id": "D2",
+    "name": "Duct 2",
+    "route": [
+     "V3",
+     "SAMPLE|J1",
+     "SAMPLE|J2",
+     "V4"
+    ],
+    "D_mm": 1015,
+    "k": 0.003,
+    "kb": 0.003,
+    "side": "right",
+    "vert": "floor",
+    "pipeLen": 3,
+    "kIn": 0.5,
+    "kOut": 1,
+    "from": "DN3",
+    "to": "DN4",
+    "pointPins": {},
+    "legOffsets": {},
+    "fans": [
+     {
+      "id": "F2",
+      "raw": 3,
+      "fanKind": "auxiliary",
+      "fanSource": "quadratic",
+      "fan": {
+       "name": "Fan heading 2",
+       "source": "quadratic",
+       "controlMode": "curve",
+       "quadraticInputs": {
+        "P0": 3000,
+        "Q_duty": 15,
+        "P_duty": 2000,
+        "rho": 1.2,
+        "speedRps": 25
+       }
+      },
+      "fanOp": {
+       "Q": 17.72,
+       "P": 1614,
+       "airPower": 28.6,
+       "R_sys": 5.142099092846154,
+       "inStall": false,
+       "reverseFlow": false,
+       "beyondCurve": false,
+       "rhoOp": 1.2101536118687912,
+       "Q_max_curve": 25.98076211353316
+      }
+     }
+    ],
+    "reducers": [],
+    "leak": {
+     "on": true,
+     "Lc": 5,
+     "section": 20
+    }
+   }
+  ],
+  "ductNodes": [
+   {
+    "id": "DN1",
+    "host": "V1",
+    "p": null
+   },
+   {
+    "id": "DN2",
+    "host": "V2",
+    "p": null
+   },
+   {
+    "id": "DN3",
+    "host": "V3",
+    "p": null
+   },
+   {
+    "id": "DN4",
+    "host": "SAMPLE|J2",
+    "p": null
+   }
+  ],
+  "machines": [],
+  "assets": [],
+  "seq": {
+   "d": 2,
+   "c": 0,
+   "dn": 4,
+   "v": 4,
+   "m": 0,
+   "a": 0
+  }
+ }
+}

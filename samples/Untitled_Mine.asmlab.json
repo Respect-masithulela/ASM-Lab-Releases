@@ -1,0 +1,198 @@
+{
+  "network": {
+    "nodes": [
+      {
+        "id": "N001",
+        "type": "intake",
+        "elevation": -1248.9,
+        "name": "N001",
+        "fixedPressure": 101325
+      },
+      {
+        "id": "N002",
+        "type": "junction",
+        "elevation": -1512.9120726497354,
+        "name": "N002"
+      },
+      {
+        "id": "N003",
+        "type": "junction",
+        "elevation": -1648.9,
+        "name": "N003"
+      },
+      {
+        "id": "N004",
+        "type": "junction",
+        "elevation": -1513,
+        "name": "N004"
+      },
+      {
+        "id": "N005",
+        "type": "exhaust",
+        "elevation": -1912.9120726497354,
+        "name": "N005"
+      },
+      {
+        "id": "N006",
+        "type": "junction",
+        "elevation": -1513,
+        "name": "N006"
+      },
+      {
+        "id": "N007",
+        "type": "exhaust",
+        "elevation": -1513,
+        "name": "N007"
+      }
+    ],
+    "airways": [
+      {
+        "id": "A001",
+        "name": "A001",
+        "fromNode": "N001",
+        "toNode": "N002",
+        "length": 264,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A002",
+        "name": "A002",
+        "fromNode": "N002",
+        "toNode": "N003",
+        "length": 136,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A003",
+        "name": "A003",
+        "fromNode": "N004",
+        "toNode": "N005",
+        "length": 399.9,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A004",
+        "name": "A004",
+        "fromNode": "N002",
+        "toNode": "N006",
+        "length": 128.3,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A005",
+        "name": "A005",
+        "fromNode": "N006",
+        "toNode": "N004",
+        "length": 97.1,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A006",
+        "name": "A006",
+        "fromNode": "N003",
+        "toNode": "N005",
+        "length": 306.9,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      },
+      {
+        "id": "A007",
+        "name": "A007",
+        "fromNode": "N006",
+        "toNode": "N007",
+        "length": 64.6,
+        "width": 4,
+        "height": 3.5,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "collectionId": "col-mubrxh8l"
+      }
+    ],
+    "fans": [],
+    "regulators": []
+  },
+  "nodePositions": {
+    "N001": {
+      "x": 12977.810794075702,
+      "y": -24419.54534530722
+    },
+    "N002": {
+      "x": 12977.95305612887,
+      "y": -24416.55935884278
+    },
+    "N003": {
+      "x": 12977.810794075702,
+      "y": -24419.54534530722
+    },
+    "N004": {
+      "x": 13102,
+      "y": -24521
+    },
+    "N005": {
+      "x": 13097.319274797916,
+      "y": -24520.689837625545
+    },
+    "N006": {
+      "x": 13106,
+      "y": -24424
+    },
+    "N007": {
+      "x": 13169.258018767268,
+      "y": -24411.053335229106
+    }
+  },
+  "projectName": "Untitled Mine",
+  "fileRows": [
+    {
+      "id": "col-mubrxh8l",
+      "name": "Level_1 (1)",
+      "kind": "collection",
+      "parentFileId": "file-mubrxh8l",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "file-mubrxh8l",
+      "name": "Level_1 (1)",
+      "kind": "file",
+      "showTunnels": true,
+      "showOverlay": true,
+      "showSolids": false,
+      "overlayId": "dxf-mubrxh8l",
+      "exportFormat": "glb"
+    }
+  ],
+  "selectedFileId": "col-mubrxh8l"
+}

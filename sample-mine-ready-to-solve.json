@@ -1,0 +1,31 @@
+{
+  "projectName": "Sample mine (ready to solve)",
+  "nodes": [
+    { "id": "IN", "x": 0, "y": -15, "z": 0, "type": "intake", "bc": "intake", "fixedP": 101325 },
+    { "id": "S1", "x": 0, "y": -15, "z": -180, "type": "junction" },
+    { "id": "P", "x": 40, "y": 0, "z": -180, "type": "junction" },
+    { "id": "A", "x": 40, "y": 60, "z": -180, "type": "junction" },
+    { "id": "B", "x": 40, "y": 120, "z": -180, "type": "junction" },
+    { "id": "R0", "x": 0, "y": 0, "z": -180, "type": "junction" },
+    { "id": "R1", "x": 0, "y": 60, "z": -180, "type": "junction" },
+    { "id": "R2", "x": 0, "y": 120, "z": -180, "type": "junction" },
+    { "id": "F", "x": 85, "y": 60, "z": -180, "type": "junction" },
+    { "id": "G", "x": 85, "y": 100, "z": -180, "type": "junction" },
+    { "id": "EX", "x": 0, "y": 120, "z": 0, "type": "exhaust", "bc": "exhaust", "fixedP": 101325 }
+  ],
+  "airways": [
+    { "id": "Shaft_downcast", "name": "Downcast shaft", "from": "IN", "to": "S1", "width": 6, "height": 6, "shape": "circular", "k": 0.025 },
+    { "id": "Plat", "name": "Plat", "from": "S1", "to": "P", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Haul_1", "name": "Haulage 1", "from": "P", "to": "A", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Haul_2", "name": "Haulage 2", "from": "A", "to": "B", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Xcut_station", "name": "Xcut station", "from": "P", "to": "R0", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Xcut_mid", "name": "Xcut mid", "from": "A", "to": "R1", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Xcut_north", "name": "Xcut north", "from": "B", "to": "R2", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Return_1", "name": "Return 1", "from": "R0", "to": "R1", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Return_2", "name": "Return 2", "from": "R1", "to": "R2", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Face", "name": "Working face", "from": "A", "to": "F", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Face_head", "name": "Face heading", "from": "F", "to": "G", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Face_return", "name": "Face return", "from": "G", "to": "B", "width": 5, "height": 5, "k": 0.012 },
+    { "id": "Shaft_upcast", "name": "Upcast shaft", "from": "R2", "to": "EX", "width": 6, "height": 6, "shape": "circular", "k": 0.025, "device": "fan", "fanP": 2200 }
+  ]
+}

@@ -1,0 +1,812 @@
+{
+  "projectName": "Nickel massive \u2014 open stoping",
+  "blockModel": "nickel_massive.dm",
+  "network": {
+    "nodes": [
+      {
+        "id": "SURF-IN",
+        "name": "Ramp portal",
+        "type": "intake",
+        "elevation": -80.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SURF-EX",
+        "name": "Return raise collar",
+        "type": "exhaust",
+        "elevation": -80.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "RP1",
+        "name": "Ramp 1",
+        "type": "junction",
+        "elevation": -120.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Ramp"
+      },
+      {
+        "id": "RP2",
+        "name": "Ramp 2",
+        "type": "junction",
+        "elevation": -168.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Ramp"
+      },
+      {
+        "id": "RP3",
+        "name": "Ramp foot",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-S",
+        "name": "K-S",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-SE",
+        "name": "K-SE",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-E",
+        "name": "K-E",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-NE",
+        "name": "K-NE",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-N",
+        "name": "K-N",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-NW",
+        "name": "K-NW",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-W",
+        "name": "K-W",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "K-SW",
+        "name": "K-SW",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "X1W",
+        "name": "Xcut S west",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "X1E",
+        "name": "Xcut S east",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "X2W",
+        "name": "Xcut N west",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "X2E",
+        "name": "Xcut N east",
+        "type": "junction",
+        "elevation": -188.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "ST0",
+        "name": "Stope 1",
+        "type": "junction",
+        "elevation": -176.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "ST1",
+        "name": "Stope 2",
+        "type": "junction",
+        "elevation": -176.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "ST2",
+        "name": "Stope 3",
+        "type": "junction",
+        "elevation": -176.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Keel"
+      },
+      {
+        "id": "H-S",
+        "name": "H-S",
+        "type": "junction",
+        "elevation": -168.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Halo"
+      },
+      {
+        "id": "H-E",
+        "name": "H-E",
+        "type": "junction",
+        "elevation": -168.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Halo"
+      },
+      {
+        "id": "H-N",
+        "name": "H-N",
+        "type": "junction",
+        "elevation": -168.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Halo"
+      },
+      {
+        "id": "H-W",
+        "name": "H-W",
+        "type": "junction",
+        "elevation": -168.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Halo"
+      }
+    ],
+    "airways": [
+      {
+        "id": "R0",
+        "name": "Ramp",
+        "fromNode": "SURF-IN",
+        "toNode": "RP1",
+        "length": 72.11,
+        "width": 5.5,
+        "height": 5.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Ramp"
+      },
+      {
+        "id": "R1",
+        "name": "Ramp",
+        "fromNode": "RP1",
+        "toNode": "RP2",
+        "length": 101.51,
+        "width": 5.5,
+        "height": 5.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Ramp"
+      },
+      {
+        "id": "R2",
+        "name": "Ramp",
+        "fromNode": "RP2",
+        "toNode": "RP3",
+        "length": 87.75,
+        "width": 5.5,
+        "height": 5.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Ramp"
+      },
+      {
+        "id": "KP-K-S-K-SE",
+        "name": "Keel perimeter",
+        "fromNode": "K-S",
+        "toNode": "K-SE",
+        "length": 98.49,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-SE-K-E",
+        "name": "Keel perimeter",
+        "fromNode": "K-SE",
+        "toNode": "K-E",
+        "length": 44.72,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-E-K-NE",
+        "name": "Keel perimeter",
+        "fromNode": "K-E",
+        "toNode": "K-NE",
+        "length": 44.72,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-NE-K-N",
+        "name": "Keel perimeter",
+        "fromNode": "K-NE",
+        "toNode": "K-N",
+        "length": 94.87,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-N-K-NW",
+        "name": "Keel perimeter",
+        "fromNode": "K-N",
+        "toNode": "K-NW",
+        "length": 94.87,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-NW-K-W",
+        "name": "Keel perimeter",
+        "fromNode": "K-NW",
+        "toNode": "K-W",
+        "length": 44.72,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-W-K-SW",
+        "name": "Keel perimeter",
+        "fromNode": "K-W",
+        "toNode": "K-SW",
+        "length": 44.72,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "KP-K-SW-K-S",
+        "name": "Keel perimeter",
+        "fromNode": "K-SW",
+        "toNode": "K-S",
+        "length": 98.49,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "RP-KS",
+        "name": "Ramp to perimeter",
+        "fromNode": "RP3",
+        "toNode": "K-S",
+        "length": 10.0,
+        "width": 5.5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC1",
+        "name": "Keel crosscut south",
+        "fromNode": "X1W",
+        "toNode": "X1E",
+        "length": 160.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC2",
+        "name": "Keel crosscut north",
+        "fromNode": "X2W",
+        "toNode": "X2E",
+        "length": 160.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC1W",
+        "name": "To south xcut",
+        "fromNode": "K-SW",
+        "toNode": "X1W",
+        "length": 22.36,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC1E",
+        "name": "To south xcut",
+        "fromNode": "X1E",
+        "toNode": "K-SE",
+        "length": 22.36,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC2W",
+        "name": "To north xcut",
+        "fromNode": "K-NW",
+        "toNode": "X2W",
+        "length": 26.93,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "XC2E",
+        "name": "To north xcut",
+        "fromNode": "X2E",
+        "toNode": "K-NE",
+        "length": 26.93,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "STOPE0",
+        "name": "Open stope",
+        "fromNode": "X1W",
+        "toNode": "ST0",
+        "length": 61.19,
+        "width": 8,
+        "height": 12,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "STOPE1",
+        "name": "Open stope",
+        "fromNode": "X1W",
+        "toNode": "ST1",
+        "length": 100.72,
+        "width": 8,
+        "height": 12,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "STOPE2",
+        "name": "Open stope",
+        "fromNode": "X2W",
+        "toNode": "ST2",
+        "length": 80.89,
+        "width": 8,
+        "height": 12,
+        "frictionFactor": 0.018,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Keel"
+      },
+      {
+        "id": "H-H-S-H-E",
+        "name": "Halo drive",
+        "fromNode": "H-S",
+        "toNode": "H-E",
+        "length": 122.07,
+        "width": 4.8,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Halo"
+      },
+      {
+        "id": "H-H-E-H-N",
+        "name": "Halo drive",
+        "fromNode": "H-E",
+        "toNode": "H-N",
+        "length": 116.62,
+        "width": 4.8,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Halo"
+      },
+      {
+        "id": "H-H-N-H-W",
+        "name": "Halo drive",
+        "fromNode": "H-N",
+        "toNode": "H-W",
+        "length": 116.62,
+        "width": 4.8,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Halo"
+      },
+      {
+        "id": "H-H-W-H-S",
+        "name": "Halo drive",
+        "fromNode": "H-W",
+        "toNode": "H-S",
+        "length": 122.07,
+        "width": 4.8,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Halo"
+      },
+      {
+        "id": "OP-H",
+        "name": "Halo access raise",
+        "fromNode": "K-N",
+        "toNode": "H-N",
+        "length": 22.36,
+        "width": 3.5,
+        "height": 3.5,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.5,
+        "collectionId": "col-Halo"
+      },
+      {
+        "id": "RET",
+        "name": "Return raise",
+        "fromNode": "K-W",
+        "toNode": "SURF-EX",
+        "length": 272.33,
+        "width": 4.8,
+        "height": 4.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 4.8,
+        "collectionId": "col-Surface"
+      }
+    ],
+    "fans": [
+      {
+        "id": "F-RET",
+        "airwayId": "RET",
+        "name": "Nickel main fan",
+        "rhoRef": 1.2,
+        "points": [
+          {
+            "Q": 0,
+            "P": 300.0
+          },
+          {
+            "Q": 22.5,
+            "P": 289.7
+          },
+          {
+            "Q": 45.0,
+            "P": 258.8
+          },
+          {
+            "Q": 67.5,
+            "P": 207.2
+          },
+          {
+            "Q": 90,
+            "P": 135.0
+          },
+          {
+            "Q": 103.5,
+            "P": 81.8
+          }
+        ]
+      }
+    ],
+    "regulators": [
+      {
+        "id": "R-HALO",
+        "name": "Halo regulator",
+        "airwayId": "H-H-E-H-N",
+        "status": "open",
+        "mode": "fixed-area",
+        "area": 9.0
+      }
+    ]
+  },
+  "nodePositions": {
+    "SURF-IN": {
+      "x": 30340.0,
+      "y": 14960.0,
+      "z": -80.0
+    },
+    "SURF-EX": {
+      "x": 29980.0,
+      "y": 15180.0,
+      "z": -80.0
+    },
+    "RP1": {
+      "x": 30340.0,
+      "y": 15020.0,
+      "z": -120.0
+    },
+    "RP2": {
+      "x": 30420.0,
+      "y": 15060.0,
+      "z": -168.0
+    },
+    "RP3": {
+      "x": 30340.0,
+      "y": 15090.0,
+      "z": -188.0
+    },
+    "K-S": {
+      "x": 30340.0,
+      "y": 15100.0,
+      "z": -188.0
+    },
+    "K-SE": {
+      "x": 30430.0,
+      "y": 15140.0,
+      "z": -188.0
+    },
+    "K-E": {
+      "x": 30450.0,
+      "y": 15180.0,
+      "z": -188.0
+    },
+    "K-NE": {
+      "x": 30430.0,
+      "y": 15220.0,
+      "z": -188.0
+    },
+    "K-N": {
+      "x": 30340.0,
+      "y": 15250.0,
+      "z": -188.0
+    },
+    "K-NW": {
+      "x": 30250.0,
+      "y": 15220.0,
+      "z": -188.0
+    },
+    "K-W": {
+      "x": 30230.0,
+      "y": 15180.0,
+      "z": -188.0
+    },
+    "K-SW": {
+      "x": 30250.0,
+      "y": 15140.0,
+      "z": -188.0
+    },
+    "X1W": {
+      "x": 30260.0,
+      "y": 15160.0,
+      "z": -188.0
+    },
+    "X1E": {
+      "x": 30420.0,
+      "y": 15160.0,
+      "z": -188.0
+    },
+    "X2W": {
+      "x": 30260.0,
+      "y": 15195.0,
+      "z": -188.0
+    },
+    "X2E": {
+      "x": 30420.0,
+      "y": 15195.0,
+      "z": -188.0
+    },
+    "ST0": {
+      "x": 30320.0,
+      "y": 15160.0,
+      "z": -176.0
+    },
+    "ST1": {
+      "x": 30360.0,
+      "y": 15160.0,
+      "z": -176.0
+    },
+    "ST2": {
+      "x": 30340.0,
+      "y": 15195.0,
+      "z": -176.0
+    },
+    "H-S": {
+      "x": 30340.0,
+      "y": 15110.0,
+      "z": -168.0
+    },
+    "H-E": {
+      "x": 30440.0,
+      "y": 15180.0,
+      "z": -168.0
+    },
+    "H-N": {
+      "x": 30340.0,
+      "y": 15240.0,
+      "z": -168.0
+    },
+    "H-W": {
+      "x": 30240.0,
+      "y": 15180.0,
+      "z": -168.0
+    }
+  },
+  "fileRows": [
+    {
+      "id": "col-Halo",
+      "name": "Halo",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Keel",
+      "name": "Keel",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Ramp",
+      "name": "Ramp",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Surface",
+      "name": "Surface",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    }
+  ]
+}

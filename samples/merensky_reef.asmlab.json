@@ -1,0 +1,1642 @@
+{
+  "projectName": "Merensky reef \u2014 main + leader",
+  "blockModel": "merensky_reef.dm",
+  "network": {
+    "nodes": [
+      {
+        "id": "SURF-IN",
+        "name": "East decline portal",
+        "type": "intake",
+        "elevation": -480.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SURF-EX",
+        "name": "Return collar",
+        "type": "exhaust",
+        "elevation": -480.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "DEC-FOOT",
+        "name": "Decline foot",
+        "type": "junction",
+        "elevation": -656.967,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M00",
+        "name": "East strike 8080",
+        "type": "junction",
+        "elevation": -653.29,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M01",
+        "name": "East strike 8160",
+        "type": "junction",
+        "elevation": -653.668,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M02",
+        "name": "East strike 8240",
+        "type": "junction",
+        "elevation": -654.264,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M03",
+        "name": "East strike 8320",
+        "type": "junction",
+        "elevation": -654.638,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M04",
+        "name": "East strike 8400",
+        "type": "junction",
+        "elevation": -654.513,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M05",
+        "name": "East strike 8480",
+        "type": "junction",
+        "elevation": -653.981,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M06",
+        "name": "East strike 8560",
+        "type": "junction",
+        "elevation": -653.436,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M07",
+        "name": "East strike 8640",
+        "type": "junction",
+        "elevation": -653.281,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M08",
+        "name": "East strike 8720",
+        "type": "junction",
+        "elevation": -653.63,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M09",
+        "name": "East strike 8800",
+        "type": "junction",
+        "elevation": -654.226,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M010",
+        "name": "East strike 8880",
+        "type": "junction",
+        "elevation": -654.627,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "East"
+      },
+      {
+        "id": "M10",
+        "name": "Mid strike 8080",
+        "type": "junction",
+        "elevation": -607.95,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M11",
+        "name": "Mid strike 8160",
+        "type": "junction",
+        "elevation": -611.247,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M12",
+        "name": "Mid strike 8240",
+        "type": "junction",
+        "elevation": -616.445,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M13",
+        "name": "Mid strike 8320",
+        "type": "junction",
+        "elevation": -619.701,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M14",
+        "name": "Mid strike 8400",
+        "type": "junction",
+        "elevation": -618.608,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M15",
+        "name": "Mid strike 8480",
+        "type": "junction",
+        "elevation": -613.973,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M16",
+        "name": "Mid strike 8560",
+        "type": "junction",
+        "elevation": -609.224,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M17",
+        "name": "Mid strike 8640",
+        "type": "junction",
+        "elevation": -607.873,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M18",
+        "name": "Mid strike 8720",
+        "type": "junction",
+        "elevation": -610.918,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M19",
+        "name": "Mid strike 8800",
+        "type": "junction",
+        "elevation": -616.108,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M110",
+        "name": "Mid strike 8880",
+        "type": "junction",
+        "elevation": -619.606,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Mid"
+      },
+      {
+        "id": "M20",
+        "name": "West strike 8080",
+        "type": "junction",
+        "elevation": -579.232,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M21",
+        "name": "West strike 8160",
+        "type": "junction",
+        "elevation": -576.11,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M22",
+        "name": "West strike 8240",
+        "type": "junction",
+        "elevation": -571.188,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M23",
+        "name": "West strike 8320",
+        "type": "junction",
+        "elevation": -568.104,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M24",
+        "name": "West strike 8400",
+        "type": "junction",
+        "elevation": -569.139,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M25",
+        "name": "West strike 8480",
+        "type": "junction",
+        "elevation": -573.528,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M26",
+        "name": "West strike 8560",
+        "type": "junction",
+        "elevation": -578.025,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M27",
+        "name": "West strike 8640",
+        "type": "junction",
+        "elevation": -579.305,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M28",
+        "name": "West strike 8720",
+        "type": "junction",
+        "elevation": -576.422,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M29",
+        "name": "West strike 8800",
+        "type": "junction",
+        "elevation": -571.506,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "M210",
+        "name": "West strike 8880",
+        "type": "junction",
+        "elevation": -568.195,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "West"
+      },
+      {
+        "id": "L01",
+        "name": "Leader 8160",
+        "type": "junction",
+        "elevation": -634.668,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L03",
+        "name": "Leader 8320",
+        "type": "junction",
+        "elevation": -635.638,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L05",
+        "name": "Leader 8480",
+        "type": "junction",
+        "elevation": -634.981,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L07",
+        "name": "Leader 8640",
+        "type": "junction",
+        "elevation": -634.281,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L09",
+        "name": "Leader 8800",
+        "type": "junction",
+        "elevation": -635.226,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L11",
+        "name": "Leader 8160",
+        "type": "junction",
+        "elevation": -592.247,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L13",
+        "name": "Leader 8320",
+        "type": "junction",
+        "elevation": -600.701,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L15",
+        "name": "Leader 8480",
+        "type": "junction",
+        "elevation": -594.973,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L17",
+        "name": "Leader 8640",
+        "type": "junction",
+        "elevation": -588.873,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      },
+      {
+        "id": "L19",
+        "name": "Leader 8800",
+        "type": "junction",
+        "elevation": -597.108,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Leader"
+      }
+    ],
+    "airways": [
+      {
+        "id": "DEC",
+        "name": "Access decline",
+        "fromNode": "SURF-IN",
+        "toNode": "DEC-FOOT",
+        "length": 203.27,
+        "width": 5.5,
+        "height": 5.2,
+        "frictionFactor": 0.014,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Surface"
+      },
+      {
+        "id": "MS0-1",
+        "name": "East strike",
+        "fromNode": "M00",
+        "toNode": "M01",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-2",
+        "name": "East strike",
+        "fromNode": "M01",
+        "toNode": "M02",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-3",
+        "name": "East strike",
+        "fromNode": "M02",
+        "toNode": "M03",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-4",
+        "name": "East strike",
+        "fromNode": "M03",
+        "toNode": "M04",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-5",
+        "name": "East strike",
+        "fromNode": "M04",
+        "toNode": "M05",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-6",
+        "name": "East strike",
+        "fromNode": "M05",
+        "toNode": "M06",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-7",
+        "name": "East strike",
+        "fromNode": "M06",
+        "toNode": "M07",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-8",
+        "name": "East strike",
+        "fromNode": "M07",
+        "toNode": "M08",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-9",
+        "name": "East strike",
+        "fromNode": "M08",
+        "toNode": "M09",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS0-10",
+        "name": "East strike",
+        "fromNode": "M09",
+        "toNode": "M010",
+        "length": 80.0,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MS1-1",
+        "name": "Mid strike",
+        "fromNode": "M10",
+        "toNode": "M11",
+        "length": 80.07,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-2",
+        "name": "Mid strike",
+        "fromNode": "M11",
+        "toNode": "M12",
+        "length": 80.17,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-3",
+        "name": "Mid strike",
+        "fromNode": "M12",
+        "toNode": "M13",
+        "length": 80.07,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-4",
+        "name": "Mid strike",
+        "fromNode": "M13",
+        "toNode": "M14",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-5",
+        "name": "Mid strike",
+        "fromNode": "M14",
+        "toNode": "M15",
+        "length": 80.13,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-6",
+        "name": "Mid strike",
+        "fromNode": "M15",
+        "toNode": "M16",
+        "length": 80.14,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-7",
+        "name": "Mid strike",
+        "fromNode": "M16",
+        "toNode": "M17",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-8",
+        "name": "Mid strike",
+        "fromNode": "M17",
+        "toNode": "M18",
+        "length": 80.06,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-9",
+        "name": "Mid strike",
+        "fromNode": "M18",
+        "toNode": "M19",
+        "length": 80.17,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS1-10",
+        "name": "Mid strike",
+        "fromNode": "M19",
+        "toNode": "M110",
+        "length": 80.08,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MS2-1",
+        "name": "West strike",
+        "fromNode": "M20",
+        "toNode": "M21",
+        "length": 80.06,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-2",
+        "name": "West strike",
+        "fromNode": "M21",
+        "toNode": "M22",
+        "length": 80.15,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-3",
+        "name": "West strike",
+        "fromNode": "M22",
+        "toNode": "M23",
+        "length": 80.06,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-4",
+        "name": "West strike",
+        "fromNode": "M23",
+        "toNode": "M24",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-5",
+        "name": "West strike",
+        "fromNode": "M24",
+        "toNode": "M25",
+        "length": 80.12,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-6",
+        "name": "West strike",
+        "fromNode": "M25",
+        "toNode": "M26",
+        "length": 80.13,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-7",
+        "name": "West strike",
+        "fromNode": "M26",
+        "toNode": "M27",
+        "length": 80.01,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-8",
+        "name": "West strike",
+        "fromNode": "M27",
+        "toNode": "M28",
+        "length": 80.05,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-9",
+        "name": "West strike",
+        "fromNode": "M28",
+        "toNode": "M29",
+        "length": 80.15,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "MS2-10",
+        "name": "West strike",
+        "fromNode": "M29",
+        "toNode": "M210",
+        "length": 80.07,
+        "width": 4.5,
+        "height": 3.6,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-West"
+      },
+      {
+        "id": "DEC-E",
+        "name": "Decline to east strike",
+        "fromNode": "DEC-FOOT",
+        "toNode": "M01",
+        "length": 40.14,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD0-0",
+        "name": "Dip drive",
+        "fromNode": "M00",
+        "toNode": "M10",
+        "length": 147.16,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-0",
+        "name": "Dip drive",
+        "fromNode": "M10",
+        "toNode": "M20",
+        "length": 142.92,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MD0-2",
+        "name": "Dip drive",
+        "fromNode": "M02",
+        "toNode": "M12",
+        "length": 145.02,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-2",
+        "name": "Dip drive",
+        "fromNode": "M12",
+        "toNode": "M22",
+        "length": 147.13,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MD0-4",
+        "name": "Dip drive",
+        "fromNode": "M04",
+        "toNode": "M14",
+        "length": 144.53,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-4",
+        "name": "Dip drive",
+        "fromNode": "M14",
+        "toNode": "M24",
+        "length": 148.48,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MD0-6",
+        "name": "Dip drive",
+        "fromNode": "M06",
+        "toNode": "M16",
+        "length": 146.82,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-6",
+        "name": "Dip drive",
+        "fromNode": "M16",
+        "toNode": "M26",
+        "length": 143.43,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MD0-8",
+        "name": "Dip drive",
+        "fromNode": "M08",
+        "toNode": "M18",
+        "length": 146.37,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-8",
+        "name": "Dip drive",
+        "fromNode": "M18",
+        "toNode": "M28",
+        "length": 144.19,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "MD0-10",
+        "name": "Dip drive",
+        "fromNode": "M010",
+        "toNode": "M110",
+        "length": 144.31,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-East"
+      },
+      {
+        "id": "MD1-10",
+        "name": "Dip drive",
+        "fromNode": "M110",
+        "toNode": "M210",
+        "length": 149.14,
+        "width": 4.2,
+        "height": 3.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Mid"
+      },
+      {
+        "id": "LR0-1",
+        "name": "Leader raise",
+        "fromNode": "M01",
+        "toNode": "L01",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR0-3",
+        "name": "Leader raise",
+        "fromNode": "M03",
+        "toNode": "L03",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS0-3",
+        "name": "Leader strike",
+        "fromNode": "L01",
+        "toNode": "L03",
+        "length": 160.0,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR0-5",
+        "name": "Leader raise",
+        "fromNode": "M05",
+        "toNode": "L05",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS0-5",
+        "name": "Leader strike",
+        "fromNode": "L03",
+        "toNode": "L05",
+        "length": 160.0,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR0-7",
+        "name": "Leader raise",
+        "fromNode": "M07",
+        "toNode": "L07",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS0-7",
+        "name": "Leader strike",
+        "fromNode": "L05",
+        "toNode": "L07",
+        "length": 160.0,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR0-9",
+        "name": "Leader raise",
+        "fromNode": "M09",
+        "toNode": "L09",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS0-9",
+        "name": "Leader strike",
+        "fromNode": "L07",
+        "toNode": "L09",
+        "length": 160.0,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR1-1",
+        "name": "Leader raise",
+        "fromNode": "M11",
+        "toNode": "L11",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR1-3",
+        "name": "Leader raise",
+        "fromNode": "M13",
+        "toNode": "L13",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS1-3",
+        "name": "Leader strike",
+        "fromNode": "L11",
+        "toNode": "L13",
+        "length": 160.22,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR1-5",
+        "name": "Leader raise",
+        "fromNode": "M15",
+        "toNode": "L15",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS1-5",
+        "name": "Leader strike",
+        "fromNode": "L13",
+        "toNode": "L15",
+        "length": 160.1,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR1-7",
+        "name": "Leader raise",
+        "fromNode": "M17",
+        "toNode": "L17",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS1-7",
+        "name": "Leader strike",
+        "fromNode": "L15",
+        "toNode": "L17",
+        "length": 160.12,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LR1-9",
+        "name": "Leader raise",
+        "fromNode": "M19",
+        "toNode": "L19",
+        "length": 19.0,
+        "width": 2.8,
+        "height": 2.8,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 2.8,
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "LS1-9",
+        "name": "Leader strike",
+        "fromNode": "L17",
+        "toNode": "L19",
+        "length": 160.21,
+        "width": 3.8,
+        "height": 2.4,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Leader"
+      },
+      {
+        "id": "RET",
+        "name": "Return raise",
+        "fromNode": "M210",
+        "toNode": "SURF-EX",
+        "length": 398.22,
+        "width": 4.5,
+        "height": 4.5,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 4.5,
+        "collectionId": "col-Surface"
+      }
+    ],
+    "fans": [
+      {
+        "id": "F-RET",
+        "airwayId": "RET",
+        "name": "Merensky main fan",
+        "rhoRef": 1.2,
+        "points": [
+          {
+            "Q": 0,
+            "P": 360.0
+          },
+          {
+            "Q": 32.5,
+            "P": 347.6
+          },
+          {
+            "Q": 65.0,
+            "P": 310.5
+          },
+          {
+            "Q": 97.5,
+            "P": 248.6
+          },
+          {
+            "Q": 130,
+            "P": 162.0
+          },
+          {
+            "Q": 149.5,
+            "P": 98.1
+          }
+        ]
+      }
+    ],
+    "regulators": [
+      {
+        "id": "R-WEST",
+        "name": "West strike regulator",
+        "airwayId": "MS2-6",
+        "status": "open",
+        "mode": "fixed-area",
+        "area": 7.5
+      }
+    ]
+  },
+  "nodePositions": {
+    "SURF-IN": {
+      "x": 7680,
+      "y": 8200,
+      "z": -480.0
+    },
+    "SURF-EX": {
+      "x": 7680,
+      "y": 8800,
+      "z": -480.0
+    },
+    "DEC-FOOT": {
+      "x": 7580.0,
+      "y": 8200,
+      "z": -656.967
+    },
+    "M00": {
+      "x": 7580.0,
+      "y": 8080.0,
+      "z": -653.29
+    },
+    "M01": {
+      "x": 7580.0,
+      "y": 8160.0,
+      "z": -653.668
+    },
+    "M02": {
+      "x": 7580.0,
+      "y": 8240.0,
+      "z": -654.264
+    },
+    "M03": {
+      "x": 7580.0,
+      "y": 8320.0,
+      "z": -654.638
+    },
+    "M04": {
+      "x": 7580.0,
+      "y": 8400.0,
+      "z": -654.513
+    },
+    "M05": {
+      "x": 7580.0,
+      "y": 8480.0,
+      "z": -653.981
+    },
+    "M06": {
+      "x": 7580.0,
+      "y": 8560.0,
+      "z": -653.436
+    },
+    "M07": {
+      "x": 7580.0,
+      "y": 8640.0,
+      "z": -653.281
+    },
+    "M08": {
+      "x": 7580.0,
+      "y": 8720.0,
+      "z": -653.63
+    },
+    "M09": {
+      "x": 7580.0,
+      "y": 8800.0,
+      "z": -654.226
+    },
+    "M010": {
+      "x": 7580.0,
+      "y": 8880.0,
+      "z": -654.627
+    },
+    "M10": {
+      "x": 7440.0,
+      "y": 8080.0,
+      "z": -607.95
+    },
+    "M11": {
+      "x": 7440.0,
+      "y": 8160.0,
+      "z": -611.247
+    },
+    "M12": {
+      "x": 7440.0,
+      "y": 8240.0,
+      "z": -616.445
+    },
+    "M13": {
+      "x": 7440.0,
+      "y": 8320.0,
+      "z": -619.701
+    },
+    "M14": {
+      "x": 7440.0,
+      "y": 8400.0,
+      "z": -618.608
+    },
+    "M15": {
+      "x": 7440.0,
+      "y": 8480.0,
+      "z": -613.973
+    },
+    "M16": {
+      "x": 7440.0,
+      "y": 8560.0,
+      "z": -609.224
+    },
+    "M17": {
+      "x": 7440.0,
+      "y": 8640.0,
+      "z": -607.873
+    },
+    "M18": {
+      "x": 7440.0,
+      "y": 8720.0,
+      "z": -610.918
+    },
+    "M19": {
+      "x": 7440.0,
+      "y": 8800.0,
+      "z": -616.108
+    },
+    "M110": {
+      "x": 7440.0,
+      "y": 8880.0,
+      "z": -619.606
+    },
+    "M20": {
+      "x": 7300.0,
+      "y": 8080.0,
+      "z": -579.232
+    },
+    "M21": {
+      "x": 7300.0,
+      "y": 8160.0,
+      "z": -576.11
+    },
+    "M22": {
+      "x": 7300.0,
+      "y": 8240.0,
+      "z": -571.188
+    },
+    "M23": {
+      "x": 7300.0,
+      "y": 8320.0,
+      "z": -568.104
+    },
+    "M24": {
+      "x": 7300.0,
+      "y": 8400.0,
+      "z": -569.139
+    },
+    "M25": {
+      "x": 7300.0,
+      "y": 8480.0,
+      "z": -573.528
+    },
+    "M26": {
+      "x": 7300.0,
+      "y": 8560.0,
+      "z": -578.025
+    },
+    "M27": {
+      "x": 7300.0,
+      "y": 8640.0,
+      "z": -579.305
+    },
+    "M28": {
+      "x": 7300.0,
+      "y": 8720.0,
+      "z": -576.422
+    },
+    "M29": {
+      "x": 7300.0,
+      "y": 8800.0,
+      "z": -571.506
+    },
+    "M210": {
+      "x": 7300.0,
+      "y": 8880.0,
+      "z": -568.195
+    },
+    "L01": {
+      "x": 7580.0,
+      "y": 8160.0,
+      "z": -634.668
+    },
+    "L03": {
+      "x": 7580.0,
+      "y": 8320.0,
+      "z": -635.638
+    },
+    "L05": {
+      "x": 7580.0,
+      "y": 8480.0,
+      "z": -634.981
+    },
+    "L07": {
+      "x": 7580.0,
+      "y": 8640.0,
+      "z": -634.281
+    },
+    "L09": {
+      "x": 7580.0,
+      "y": 8800.0,
+      "z": -635.226
+    },
+    "L11": {
+      "x": 7440.0,
+      "y": 8160.0,
+      "z": -592.247
+    },
+    "L13": {
+      "x": 7440.0,
+      "y": 8320.0,
+      "z": -600.701
+    },
+    "L15": {
+      "x": 7440.0,
+      "y": 8480.0,
+      "z": -594.973
+    },
+    "L17": {
+      "x": 7440.0,
+      "y": 8640.0,
+      "z": -588.873
+    },
+    "L19": {
+      "x": 7440.0,
+      "y": 8800.0,
+      "z": -597.108
+    }
+  },
+  "fileRows": [
+    {
+      "id": "col-East",
+      "name": "East",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Leader",
+      "name": "Leader",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Mid",
+      "name": "Mid",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Surface",
+      "name": "Surface",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-West",
+      "name": "West",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    }
+  ]
+}

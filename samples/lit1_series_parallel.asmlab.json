@@ -1,0 +1,121 @@
+{
+ "projectName": "Lit 1 series-parallel",
+ "notes": "Four airways: R1 in series with the parallel pair R2 // R3, then R4. 500 Pa across. Atkinson square law p = RQ²; series R add, parallel 1/√R add (McPherson 1993, Subsurface Ventilation Engineering, ch. 5; Hartman et al., Mine Ventilation and Air Conditioning, ch. 7).",
+ "expected": {
+  "total_flow_m3_s": 33.558,
+  "R2_flow_m3_s": 20.135,
+  "R3_flow_m3_s": 13.423,
+  "equivalent_R": 0.444,
+  "basis": "Rp = 1/(1/√R2 + 1/√R3)²; Rt = R1 + Rp + R4; Q = √(Δp/Rt); Q2/Q3 = √(R3/R2)"
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "A",
+    "x": 0,
+    "y": 0,
+    "elevation": 0,
+    "type": "intake",
+    "fixedPressure": 101825.0
+   },
+   {
+    "id": "B",
+    "x": 100,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "C",
+    "x": 200,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "D",
+    "x": 300,
+    "y": 0,
+    "elevation": 0,
+    "type": "exhaust",
+    "fixedPressure": 101325
+   }
+  ],
+  "airways": [
+   {
+    "id": "R1",
+    "name": "R1",
+    "fromNode": "A",
+    "toNode": "B",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100,
+    "resistanceOverride": 0.2
+   },
+   {
+    "id": "R2",
+    "name": "R2",
+    "fromNode": "B",
+    "toNode": "C",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100,
+    "resistanceOverride": 0.4
+   },
+   {
+    "id": "R3",
+    "name": "R3",
+    "fromNode": "B",
+    "toNode": "C",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100,
+    "resistanceOverride": 0.9
+   },
+   {
+    "id": "R4",
+    "name": "R4",
+    "fromNode": "C",
+    "toNode": "D",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.01,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 100,
+    "resistanceOverride": 0.1
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ },
+ "nodePositions": {
+  "A": {
+   "x": 0,
+   "y": 0
+  },
+  "B": {
+   "x": 100,
+   "y": 0
+  },
+  "C": {
+   "x": 200,
+   "y": 0
+  },
+  "D": {
+   "x": 300,
+   "y": 0
+  }
+ }
+}

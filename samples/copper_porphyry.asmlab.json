@@ -1,0 +1,2601 @@
+{
+  "projectName": "Copper porphyry \u2014 block cave",
+  "blockModel": "copper_porphyry.dm",
+  "network": {
+    "nodes": [
+      {
+        "id": "SURF-IN",
+        "name": "Intake collar",
+        "type": "intake",
+        "elevation": 780.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SURF-EX",
+        "name": "Return collar",
+        "type": "exhaust",
+        "elevation": 780.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Surface",
+        "fixedPressure": 101325.0
+      },
+      {
+        "id": "SH-IN-BOT",
+        "name": "Intake shaft bottom",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "SH-EX-BOT",
+        "name": "Return shaft bottom",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "SH-IN-MID",
+        "name": "Intake mid station",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      },
+      {
+        "id": "SH-EX-MID",
+        "name": "Return mid station",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      },
+      {
+        "id": "E00",
+        "name": "Ext 10150/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E01",
+        "name": "Ext 10150/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E02",
+        "name": "Ext 10150/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E03",
+        "name": "Ext 10150/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E04",
+        "name": "Ext 10150/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E05",
+        "name": "Ext 10150/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E06",
+        "name": "Ext 10150/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E10",
+        "name": "Ext 10200/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E11",
+        "name": "Ext 10200/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E12",
+        "name": "Ext 10200/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E13",
+        "name": "Ext 10200/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E14",
+        "name": "Ext 10200/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E15",
+        "name": "Ext 10200/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E16",
+        "name": "Ext 10200/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E20",
+        "name": "Ext 10250/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E21",
+        "name": "Ext 10250/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E22",
+        "name": "Ext 10250/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E23",
+        "name": "Ext 10250/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E24",
+        "name": "Ext 10250/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E25",
+        "name": "Ext 10250/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E26",
+        "name": "Ext 10250/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E30",
+        "name": "Ext 10300/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E31",
+        "name": "Ext 10300/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E32",
+        "name": "Ext 10300/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E33",
+        "name": "Ext 10300/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E34",
+        "name": "Ext 10300/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E35",
+        "name": "Ext 10300/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E36",
+        "name": "Ext 10300/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E40",
+        "name": "Ext 10350/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E41",
+        "name": "Ext 10350/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E42",
+        "name": "Ext 10350/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E43",
+        "name": "Ext 10350/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E44",
+        "name": "Ext 10350/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E45",
+        "name": "Ext 10350/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E46",
+        "name": "Ext 10350/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E50",
+        "name": "Ext 10400/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E51",
+        "name": "Ext 10400/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E52",
+        "name": "Ext 10400/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E53",
+        "name": "Ext 10400/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E54",
+        "name": "Ext 10400/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E55",
+        "name": "Ext 10400/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E56",
+        "name": "Ext 10400/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E60",
+        "name": "Ext 10450/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E61",
+        "name": "Ext 10450/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E62",
+        "name": "Ext 10450/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E63",
+        "name": "Ext 10450/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E64",
+        "name": "Ext 10450/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E65",
+        "name": "Ext 10450/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E66",
+        "name": "Ext 10450/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E70",
+        "name": "Ext 10500/25130",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E71",
+        "name": "Ext 10500/25170",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E72",
+        "name": "Ext 10500/25210",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E73",
+        "name": "Ext 10500/25250",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E74",
+        "name": "Ext 10500/25290",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E75",
+        "name": "Ext 10500/25330",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "E76",
+        "name": "Ext 10500/25370",
+        "type": "junction",
+        "elevation": 448.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Extraction"
+      },
+      {
+        "id": "P-SW",
+        "name": "P-SW",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      },
+      {
+        "id": "P-SE",
+        "name": "P-SE",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      },
+      {
+        "id": "P-NE",
+        "name": "P-NE",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      },
+      {
+        "id": "P-NW",
+        "name": "P-NW",
+        "type": "junction",
+        "elevation": 560.0,
+        "temperature": 26.0,
+        "wetBulbTemp": 18.0,
+        "level": "Production"
+      }
+    ],
+    "airways": [
+      {
+        "id": "SH-IN",
+        "name": "Intake shaft",
+        "fromNode": "SURF-IN",
+        "toNode": "SH-IN-BOT",
+        "length": 334.4,
+        "width": 6,
+        "height": 6,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 6.5,
+        "collectionId": "col-Surface"
+      },
+      {
+        "id": "SH-IN-UP",
+        "name": "Intake shaft lower",
+        "fromNode": "SH-IN-MID",
+        "toNode": "SH-IN-BOT",
+        "length": 112.0,
+        "width": 6,
+        "height": 6,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 6.5,
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "SH-EX",
+        "name": "Return shaft",
+        "fromNode": "SH-EX-BOT",
+        "toNode": "SURF-EX",
+        "length": 334.4,
+        "width": 6.5,
+        "height": 6.5,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 6.5,
+        "collectionId": "col-Surface"
+      },
+      {
+        "id": "SH-EX-UP",
+        "name": "Return shaft lower",
+        "fromNode": "SH-EX-MID",
+        "toNode": "SH-EX-BOT",
+        "length": 112.0,
+        "width": 6.5,
+        "height": 6.5,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 6.5,
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN00",
+        "name": "Ext N 10150",
+        "fromNode": "E00",
+        "toNode": "E01",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN01",
+        "name": "Ext N 10150",
+        "fromNode": "E01",
+        "toNode": "E02",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN02",
+        "name": "Ext N 10150",
+        "fromNode": "E02",
+        "toNode": "E03",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN03",
+        "name": "Ext N 10150",
+        "fromNode": "E03",
+        "toNode": "E04",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN04",
+        "name": "Ext N 10150",
+        "fromNode": "E04",
+        "toNode": "E05",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN05",
+        "name": "Ext N 10150",
+        "fromNode": "E05",
+        "toNode": "E06",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN10",
+        "name": "Ext N 10200",
+        "fromNode": "E10",
+        "toNode": "E11",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN11",
+        "name": "Ext N 10200",
+        "fromNode": "E11",
+        "toNode": "E12",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN12",
+        "name": "Ext N 10200",
+        "fromNode": "E12",
+        "toNode": "E13",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN13",
+        "name": "Ext N 10200",
+        "fromNode": "E13",
+        "toNode": "E14",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN14",
+        "name": "Ext N 10200",
+        "fromNode": "E14",
+        "toNode": "E15",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN15",
+        "name": "Ext N 10200",
+        "fromNode": "E15",
+        "toNode": "E16",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN20",
+        "name": "Ext N 10250",
+        "fromNode": "E20",
+        "toNode": "E21",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN21",
+        "name": "Ext N 10250",
+        "fromNode": "E21",
+        "toNode": "E22",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN22",
+        "name": "Ext N 10250",
+        "fromNode": "E22",
+        "toNode": "E23",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN23",
+        "name": "Ext N 10250",
+        "fromNode": "E23",
+        "toNode": "E24",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN24",
+        "name": "Ext N 10250",
+        "fromNode": "E24",
+        "toNode": "E25",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN25",
+        "name": "Ext N 10250",
+        "fromNode": "E25",
+        "toNode": "E26",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN30",
+        "name": "Ext N 10300",
+        "fromNode": "E30",
+        "toNode": "E31",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN31",
+        "name": "Ext N 10300",
+        "fromNode": "E31",
+        "toNode": "E32",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN32",
+        "name": "Ext N 10300",
+        "fromNode": "E32",
+        "toNode": "E33",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN33",
+        "name": "Ext N 10300",
+        "fromNode": "E33",
+        "toNode": "E34",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN34",
+        "name": "Ext N 10300",
+        "fromNode": "E34",
+        "toNode": "E35",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN35",
+        "name": "Ext N 10300",
+        "fromNode": "E35",
+        "toNode": "E36",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN40",
+        "name": "Ext N 10350",
+        "fromNode": "E40",
+        "toNode": "E41",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN41",
+        "name": "Ext N 10350",
+        "fromNode": "E41",
+        "toNode": "E42",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN42",
+        "name": "Ext N 10350",
+        "fromNode": "E42",
+        "toNode": "E43",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN43",
+        "name": "Ext N 10350",
+        "fromNode": "E43",
+        "toNode": "E44",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN44",
+        "name": "Ext N 10350",
+        "fromNode": "E44",
+        "toNode": "E45",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN45",
+        "name": "Ext N 10350",
+        "fromNode": "E45",
+        "toNode": "E46",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN50",
+        "name": "Ext N 10400",
+        "fromNode": "E50",
+        "toNode": "E51",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN51",
+        "name": "Ext N 10400",
+        "fromNode": "E51",
+        "toNode": "E52",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN52",
+        "name": "Ext N 10400",
+        "fromNode": "E52",
+        "toNode": "E53",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN53",
+        "name": "Ext N 10400",
+        "fromNode": "E53",
+        "toNode": "E54",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN54",
+        "name": "Ext N 10400",
+        "fromNode": "E54",
+        "toNode": "E55",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN55",
+        "name": "Ext N 10400",
+        "fromNode": "E55",
+        "toNode": "E56",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN60",
+        "name": "Ext N 10450",
+        "fromNode": "E60",
+        "toNode": "E61",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN61",
+        "name": "Ext N 10450",
+        "fromNode": "E61",
+        "toNode": "E62",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN62",
+        "name": "Ext N 10450",
+        "fromNode": "E62",
+        "toNode": "E63",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN63",
+        "name": "Ext N 10450",
+        "fromNode": "E63",
+        "toNode": "E64",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN64",
+        "name": "Ext N 10450",
+        "fromNode": "E64",
+        "toNode": "E65",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN65",
+        "name": "Ext N 10450",
+        "fromNode": "E65",
+        "toNode": "E66",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN70",
+        "name": "Ext N 10500",
+        "fromNode": "E70",
+        "toNode": "E71",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN71",
+        "name": "Ext N 10500",
+        "fromNode": "E71",
+        "toNode": "E72",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN72",
+        "name": "Ext N 10500",
+        "fromNode": "E72",
+        "toNode": "E73",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN73",
+        "name": "Ext N 10500",
+        "fromNode": "E73",
+        "toNode": "E74",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN74",
+        "name": "Ext N 10500",
+        "fromNode": "E74",
+        "toNode": "E75",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EN75",
+        "name": "Ext N 10500",
+        "fromNode": "E75",
+        "toNode": "E76",
+        "length": 40.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE00",
+        "name": "Ext E drive",
+        "fromNode": "E00",
+        "toNode": "E10",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE10",
+        "name": "Ext E drive",
+        "fromNode": "E10",
+        "toNode": "E20",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE20",
+        "name": "Ext E drive",
+        "fromNode": "E20",
+        "toNode": "E30",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE30",
+        "name": "Ext E drive",
+        "fromNode": "E30",
+        "toNode": "E40",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE40",
+        "name": "Ext E drive",
+        "fromNode": "E40",
+        "toNode": "E50",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE50",
+        "name": "Ext E drive",
+        "fromNode": "E50",
+        "toNode": "E60",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE60",
+        "name": "Ext E drive",
+        "fromNode": "E60",
+        "toNode": "E70",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE01",
+        "name": "Drawpoint drive",
+        "fromNode": "E01",
+        "toNode": "E11",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE11",
+        "name": "Drawpoint drive",
+        "fromNode": "E11",
+        "toNode": "E21",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE21",
+        "name": "Drawpoint drive",
+        "fromNode": "E21",
+        "toNode": "E31",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE31",
+        "name": "Drawpoint drive",
+        "fromNode": "E31",
+        "toNode": "E41",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE41",
+        "name": "Drawpoint drive",
+        "fromNode": "E41",
+        "toNode": "E51",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE51",
+        "name": "Drawpoint drive",
+        "fromNode": "E51",
+        "toNode": "E61",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE61",
+        "name": "Drawpoint drive",
+        "fromNode": "E61",
+        "toNode": "E71",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE02",
+        "name": "Ext E drive",
+        "fromNode": "E02",
+        "toNode": "E12",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE12",
+        "name": "Ext E drive",
+        "fromNode": "E12",
+        "toNode": "E22",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE22",
+        "name": "Ext E drive",
+        "fromNode": "E22",
+        "toNode": "E32",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE32",
+        "name": "Ext E drive",
+        "fromNode": "E32",
+        "toNode": "E42",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE42",
+        "name": "Ext E drive",
+        "fromNode": "E42",
+        "toNode": "E52",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE52",
+        "name": "Ext E drive",
+        "fromNode": "E52",
+        "toNode": "E62",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE62",
+        "name": "Ext E drive",
+        "fromNode": "E62",
+        "toNode": "E72",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE03",
+        "name": "Drawpoint drive",
+        "fromNode": "E03",
+        "toNode": "E13",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE13",
+        "name": "Drawpoint drive",
+        "fromNode": "E13",
+        "toNode": "E23",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE23",
+        "name": "Drawpoint drive",
+        "fromNode": "E23",
+        "toNode": "E33",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE33",
+        "name": "Drawpoint drive",
+        "fromNode": "E33",
+        "toNode": "E43",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE43",
+        "name": "Drawpoint drive",
+        "fromNode": "E43",
+        "toNode": "E53",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE53",
+        "name": "Drawpoint drive",
+        "fromNode": "E53",
+        "toNode": "E63",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE63",
+        "name": "Drawpoint drive",
+        "fromNode": "E63",
+        "toNode": "E73",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE04",
+        "name": "Ext E drive",
+        "fromNode": "E04",
+        "toNode": "E14",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE14",
+        "name": "Ext E drive",
+        "fromNode": "E14",
+        "toNode": "E24",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE24",
+        "name": "Ext E drive",
+        "fromNode": "E24",
+        "toNode": "E34",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE34",
+        "name": "Ext E drive",
+        "fromNode": "E34",
+        "toNode": "E44",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE44",
+        "name": "Ext E drive",
+        "fromNode": "E44",
+        "toNode": "E54",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE54",
+        "name": "Ext E drive",
+        "fromNode": "E54",
+        "toNode": "E64",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE64",
+        "name": "Ext E drive",
+        "fromNode": "E64",
+        "toNode": "E74",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE05",
+        "name": "Drawpoint drive",
+        "fromNode": "E05",
+        "toNode": "E15",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE15",
+        "name": "Drawpoint drive",
+        "fromNode": "E15",
+        "toNode": "E25",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE25",
+        "name": "Drawpoint drive",
+        "fromNode": "E25",
+        "toNode": "E35",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE35",
+        "name": "Drawpoint drive",
+        "fromNode": "E35",
+        "toNode": "E45",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE45",
+        "name": "Drawpoint drive",
+        "fromNode": "E45",
+        "toNode": "E55",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE55",
+        "name": "Drawpoint drive",
+        "fromNode": "E55",
+        "toNode": "E65",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE65",
+        "name": "Drawpoint drive",
+        "fromNode": "E65",
+        "toNode": "E75",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE06",
+        "name": "Ext E drive",
+        "fromNode": "E06",
+        "toNode": "E16",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE16",
+        "name": "Ext E drive",
+        "fromNode": "E16",
+        "toNode": "E26",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE26",
+        "name": "Ext E drive",
+        "fromNode": "E26",
+        "toNode": "E36",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE36",
+        "name": "Ext E drive",
+        "fromNode": "E36",
+        "toNode": "E46",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE46",
+        "name": "Ext E drive",
+        "fromNode": "E46",
+        "toNode": "E56",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE56",
+        "name": "Ext E drive",
+        "fromNode": "E56",
+        "toNode": "E66",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EE66",
+        "name": "Ext E drive",
+        "fromNode": "E66",
+        "toNode": "E76",
+        "length": 50.0,
+        "width": 5,
+        "height": 4.5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "IN-E00",
+        "name": "Intake station drive",
+        "fromNode": "SH-IN-BOT",
+        "toNode": "E00",
+        "length": 162.79,
+        "width": 5.5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "EX-E73",
+        "name": "Return station drive",
+        "fromNode": "E73",
+        "toNode": "SH-EX-BOT",
+        "length": 110.0,
+        "width": 5.5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Extraction"
+      },
+      {
+        "id": "PR-P-SW-P-SE",
+        "name": "Production ring",
+        "fromNode": "P-SW",
+        "toNode": "P-SE",
+        "length": 210.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "PR-P-SE-P-NE",
+        "name": "Production ring",
+        "fromNode": "P-SE",
+        "toNode": "P-NE",
+        "length": 140.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "PR-P-NE-P-NW",
+        "name": "Production ring",
+        "fromNode": "P-NE",
+        "toNode": "P-NW",
+        "length": 210.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "PR-P-NW-P-SW",
+        "name": "Production ring",
+        "fromNode": "P-NW",
+        "toNode": "P-SW",
+        "length": 140.0,
+        "width": 5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "IN-PSW",
+        "name": "Intake to production",
+        "fromNode": "SH-IN-MID",
+        "toNode": "P-SW",
+        "length": 193.13,
+        "width": 5.5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "PNW-EX",
+        "name": "Production to return",
+        "fromNode": "P-NE",
+        "toNode": "SH-EX-MID",
+        "length": 193.13,
+        "width": 5.5,
+        "height": 5,
+        "frictionFactor": 0.012,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "rectangular",
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "OP0",
+        "name": "Orepass",
+        "fromNode": "P-SW",
+        "toNode": "E21",
+        "length": 116.38,
+        "width": 3,
+        "height": 3,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.0,
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "OP1",
+        "name": "Orepass",
+        "fromNode": "P-SE",
+        "toNode": "E51",
+        "length": 116.38,
+        "width": 3,
+        "height": 3,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.0,
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "OP2",
+        "name": "Orepass",
+        "fromNode": "P-NE",
+        "toNode": "E55",
+        "length": 116.38,
+        "width": 3,
+        "height": 3,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.0,
+        "collectionId": "col-Production"
+      },
+      {
+        "id": "OP3",
+        "name": "Orepass",
+        "fromNode": "P-NW",
+        "toNode": "E25",
+        "length": 116.38,
+        "width": 3,
+        "height": 3,
+        "frictionFactor": 0.025,
+        "shockLoss": 0.05,
+        "airDensity": 1.2,
+        "shape": "circular",
+        "diameter": 3.0,
+        "collectionId": "col-Production"
+      }
+    ],
+    "fans": [
+      {
+        "id": "F-SH-EX",
+        "airwayId": "SH-EX",
+        "name": "Main return fan",
+        "rhoRef": 1.2,
+        "points": [
+          {
+            "Q": 0,
+            "P": 420.0
+          },
+          {
+            "Q": 55.0,
+            "P": 405.6
+          },
+          {
+            "Q": 110.0,
+            "P": 362.2
+          },
+          {
+            "Q": 165.0,
+            "P": 290.1
+          },
+          {
+            "Q": 220,
+            "P": 189.0
+          },
+          {
+            "Q": 253.0,
+            "P": 114.5
+          }
+        ]
+      }
+    ],
+    "regulators": [
+      {
+        "id": "R-PR",
+        "name": "Production ring regulator",
+        "airwayId": "PR-P-NE-P-NW",
+        "status": "open",
+        "mode": "fixed-area",
+        "area": 12.0
+      }
+    ]
+  },
+  "nodePositions": {
+    "SURF-IN": {
+      "x": 10040.0,
+      "y": 25210.0,
+      "z": 780.0
+    },
+    "SURF-EX": {
+      "x": 10610.0,
+      "y": 25290.0,
+      "z": 780.0
+    },
+    "SH-IN-BOT": {
+      "x": 10040.0,
+      "y": 25250.0,
+      "z": 448.0
+    },
+    "SH-EX-BOT": {
+      "x": 10610.0,
+      "y": 25250.0,
+      "z": 448.0
+    },
+    "SH-IN-MID": {
+      "x": 10040.0,
+      "y": 25250.0,
+      "z": 560.0
+    },
+    "SH-EX-MID": {
+      "x": 10610.0,
+      "y": 25250.0,
+      "z": 560.0
+    },
+    "E00": {
+      "x": 10150,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E01": {
+      "x": 10150,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E02": {
+      "x": 10150,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E03": {
+      "x": 10150,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E04": {
+      "x": 10150,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E05": {
+      "x": 10150,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E06": {
+      "x": 10150,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E10": {
+      "x": 10200,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E11": {
+      "x": 10200,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E12": {
+      "x": 10200,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E13": {
+      "x": 10200,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E14": {
+      "x": 10200,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E15": {
+      "x": 10200,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E16": {
+      "x": 10200,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E20": {
+      "x": 10250,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E21": {
+      "x": 10250,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E22": {
+      "x": 10250,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E23": {
+      "x": 10250,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E24": {
+      "x": 10250,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E25": {
+      "x": 10250,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E26": {
+      "x": 10250,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E30": {
+      "x": 10300,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E31": {
+      "x": 10300,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E32": {
+      "x": 10300,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E33": {
+      "x": 10300,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E34": {
+      "x": 10300,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E35": {
+      "x": 10300,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E36": {
+      "x": 10300,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E40": {
+      "x": 10350,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E41": {
+      "x": 10350,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E42": {
+      "x": 10350,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E43": {
+      "x": 10350,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E44": {
+      "x": 10350,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E45": {
+      "x": 10350,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E46": {
+      "x": 10350,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E50": {
+      "x": 10400,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E51": {
+      "x": 10400,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E52": {
+      "x": 10400,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E53": {
+      "x": 10400,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E54": {
+      "x": 10400,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E55": {
+      "x": 10400,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E56": {
+      "x": 10400,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E60": {
+      "x": 10450,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E61": {
+      "x": 10450,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E62": {
+      "x": 10450,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E63": {
+      "x": 10450,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E64": {
+      "x": 10450,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E65": {
+      "x": 10450,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E66": {
+      "x": 10450,
+      "y": 25370,
+      "z": 448.0
+    },
+    "E70": {
+      "x": 10500,
+      "y": 25130,
+      "z": 448.0
+    },
+    "E71": {
+      "x": 10500,
+      "y": 25170,
+      "z": 448.0
+    },
+    "E72": {
+      "x": 10500,
+      "y": 25210,
+      "z": 448.0
+    },
+    "E73": {
+      "x": 10500,
+      "y": 25250,
+      "z": 448.0
+    },
+    "E74": {
+      "x": 10500,
+      "y": 25290,
+      "z": 448.0
+    },
+    "E75": {
+      "x": 10500,
+      "y": 25330,
+      "z": 448.0
+    },
+    "E76": {
+      "x": 10500,
+      "y": 25370,
+      "z": 448.0
+    },
+    "P-SW": {
+      "x": 10220,
+      "y": 25180,
+      "z": 560.0
+    },
+    "P-SE": {
+      "x": 10430,
+      "y": 25180,
+      "z": 560.0
+    },
+    "P-NE": {
+      "x": 10430,
+      "y": 25320,
+      "z": 560.0
+    },
+    "P-NW": {
+      "x": 10220,
+      "y": 25320,
+      "z": 560.0
+    }
+  },
+  "fileRows": [
+    {
+      "id": "col-Extraction",
+      "name": "Extraction",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Production",
+      "name": "Production",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    },
+    {
+      "id": "col-Surface",
+      "name": "Surface",
+      "kind": "collection",
+      "showTunnels": true,
+      "showOverlay": false,
+      "showSolids": false,
+      "exportFormat": "dxf"
+    }
+  ]
+}

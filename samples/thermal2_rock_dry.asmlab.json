@@ -1,0 +1,124 @@
+{
+ "projectName": "Thermal 2 Hot drive, dry rock",
+ "notes": "Solve mode Aero + thermal (the sample sets it), then F5. Site values (surface air, rock) are in the Thermal tab and saved with the collection. 1000 m downcast (\u00d85 m), 1000 m drive (5 \u00d7 5 m) at \u22121000 m, 1000 m upcast, main fan 1500 Pa at the top of the upcast. Surface air 20 \u00b0C dry / 14 \u00b0C wet bulb, 101.325 kPa. Rock heat only in the drive (virgin rock 40 \u00b0C at 1000 m, 5 years old, dry wall). Gibson/Starfield: q = G\u00b7k\u00b7(VRT \u2212 t)/r0 per m\u00b2 of wall, r0 = perimeter / 2\u03c0 = 3.18 m, Fo = \u03b1t/r0\u00b2 with \u03b1 = k/\u03c1c; air film from the drive's k and velocity (Reynolds\u2013Colburn). Along a level drive with a dry wall: t_out = VRT \u2212 (VRT \u2212 t_in)\u00b7exp(\u2212U\u00b7P\u00b7L / m\u00b7c_p), U = G\u00b7k/r0. Compare the drive's heat with the strata heat worked out by hand.",
+ "expected": {
+  "formula": "t_out = VRT \u2212 (VRT \u2212 t_in)\u00b7exp(\u2212U\u00b7P\u00b7L/(m\u00b7c_p))"
+ },
+ "thermalSite": {
+  "surfaceDryBulb": 20,
+  "surfaceWetBulb": 14,
+  "surfacePressure": 101.325,
+  "vrtAtDatum": 40,
+  "datumDepthM": 1000,
+  "geothermalGradient": 1.5,
+  "thermalConductivity": 2.5,
+  "specificHeat": 800,
+  "rockDensity": 2700,
+  "collarElevation": 0,
+  "ageYears": 5,
+  "wetness": 0,
+  "rockHeatAll": false
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "I",
+    "x": 0,
+    "y": 0,
+    "elevation": 0,
+    "type": "intake",
+    "fixedPressure": 101325
+   },
+   {
+    "id": "DB",
+    "x": 0,
+    "y": 0,
+    "elevation": -1000
+   },
+   {
+    "id": "UB",
+    "x": 1000,
+    "y": 0,
+    "elevation": -1000
+   },
+   {
+    "id": "UT",
+    "x": 1000,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "X",
+    "x": 1020,
+    "y": 0,
+    "elevation": 0,
+    "type": "exhaust",
+    "fixedPressure": 101325
+   }
+  ],
+  "airways": [
+   {
+    "id": "downcast",
+    "name": "downcast",
+    "fromNode": "I",
+    "toNode": "DB",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.008,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "circular",
+    "length": 1000,
+    "diameter": 5
+   },
+   {
+    "id": "drive",
+    "name": "drive",
+    "fromNode": "DB",
+    "toNode": "UB",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.012,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 1000,
+    "thermal": {
+     "vrtEnabled": true,
+     "wetness": 0
+    }
+   },
+   {
+    "id": "upcast",
+    "name": "upcast",
+    "fromNode": "UB",
+    "toNode": "UT",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.008,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "circular",
+    "length": 1000,
+    "diameter": 5
+   },
+   {
+    "id": "fan",
+    "name": "fan",
+    "fromNode": "UT",
+    "toNode": "X",
+    "width": 5,
+    "height": 5,
+    "frictionFactor": 0.012,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 20,
+    "device": "fan",
+    "fanP": 1500
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ }
+}

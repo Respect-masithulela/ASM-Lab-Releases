@@ -1,0 +1,53 @@
+{
+ "projectName": "Closed tunnel, leaky duct recirculating",
+ "notes": "As the closed tunnel case, with duct leakage (Lc = 20 m³/s per km at 1 kPa, a station every 20 m). The duct loses air along its length: inlet mass = outlet mass + leakage mass. In the tunnel the return grows toward the duct inlet as each leak adds its air: at the duct inlet end the tunnel carries the full inlet mass, at the outlet end only the outlet mass.",
+ "expected": {
+  "duct_mass_balance": "inlet = outlet + leakage",
+  "tunnel_at_inlet_end": "= duct inlet mass",
+  "tunnel_at_outlet_end": "= duct outlet mass",
+  "basis": "continuity at every duct and tunnel node"
+ },
+ "network": {
+  "nodes": [
+   {
+    "id": "A",
+    "x": 0,
+    "y": 0,
+    "elevation": 0
+   },
+   {
+    "id": "B",
+    "x": 200,
+    "y": 0,
+    "elevation": 0
+   }
+  ],
+  "airways": [
+   {
+    "id": "T",
+    "name": "T",
+    "fromNode": "A",
+    "toNode": "B",
+    "width": 6,
+    "height": 6,
+    "frictionFactor": 0.012,
+    "shockLoss": 0,
+    "airDensity": 1.2,
+    "shape": "rectangular",
+    "length": 200
+   }
+  ],
+  "fans": [],
+  "regulators": []
+ },
+ "nodePositions": {
+  "A": {
+   "x": 0,
+   "y": 0
+  },
+  "B": {
+   "x": 200,
+   "y": 0
+  }
+ }
+}
