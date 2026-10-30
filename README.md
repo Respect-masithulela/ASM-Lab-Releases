@@ -9,6 +9,7 @@ ASM Lab is mine ventilation and heat software: airflow, fans, walls, heat and hu
 
 ## Guides
 - [Quick start](guides/QUICK-START.md): your first model, step by step.
+- [Solver equations (PDF)](guides/ASM-Lab-Solver-Equations.pdf): every equation the solver uses, in math notation.
 - [Conversion kit](conversion-kit/README.md): file formats, converters and a worked example, for people and their AI models who bring models in from other tools or build projects in code.
 
 Only the installer, the Mac link and the guides are published here. Release notes are on each release page.
