@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="./favicon-64.png" />
-    <script type="module" crossorigin src="./assets/index-B2DgCiuC.js"></script>
+    <script type="module" crossorigin src="./assets/index-CtpuZEVW.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-lucide-react-B5g_U9Ph.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-react-dom-DbZhxalB.js">
@@ -24,11 +24,11 @@
     <link rel="modulepreload" crossorigin href="./assets/modelImport-C6M6D2O1.js">
     <link rel="modulepreload" crossorigin href="./assets/sweep-V-nnT1m0.js">
     <link rel="modulepreload" crossorigin href="./assets/store-DsMbAWTm.js">
-    <link rel="modulepreload" crossorigin href="./assets/store-D8F8VaJ1.js">
-    <link rel="modulepreload" crossorigin href="./assets/actions-D-p45gqz.js">
+    <link rel="modulepreload" crossorigin href="./assets/store-CXbo0jjp.js">
+    <link rel="modulepreload" crossorigin href="./assets/actions-B1IkMjSE.js">
     <link rel="modulepreload" crossorigin href="./assets/dxfAsmlab-B-nmp4fX.js">
     <link rel="modulepreload" crossorigin href="./assets/download-DIFqCvw5.js">
-    <link rel="modulepreload" crossorigin href="./assets/riskZones-CmIaTzYc.js">
+    <link rel="modulepreload" crossorigin href="./assets/riskZones-Bfzsbpmy.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-clsx-DB0hHKMi.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-lodash-gjnY2NXC.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-react-is-2-Vd09K4.js">
@@ -46,7 +46,7 @@
     <link rel="modulepreload" crossorigin href="./assets/vendor-eventemitter3-CM1F6Fyn.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-recharts-D4-LTPrB.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-jspdf-autotable-RnaU_NS8.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-DRcQUUQg.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Dq_whOtI.css">
   </head>
   <body>
     <div id="asmlab-boot">
@@ -68,13 +68,14 @@
           </div>
           <div>
             <div class="boot-line"><span>Building Human Aware Mining Softwares</span></div>
-            <div class="boot-year">2026.1.29</div>
+            <div class="boot-year">2026.1.30</div>
           </div>
         </div>
+        <div class="boot-licence" id="boot-licence"></div>
       </div>
     </div>
     <script>
-      var T0=Date.now(),MIN=5700;function out(){var e=document.getElementById('asmlab-boot');if(!e||e.dataset.out)return;e.dataset.out='1';e.style.opacity='0';setTimeout(function(){e.remove()},480)}window.__hideBootSplash=function(){setTimeout(out,Math.max(0,MIN-(Date.now()-T0)))};var bs=document.getElementById('asmlab-boot');if(bs){bs.addEventListener('click',out)}setTimeout(out,9000);
+      var T0=Date.now(),MIN=5700,settled=0,hiding=0;function out(){var e=document.getElementById('asmlab-boot');if(!e||e.dataset.out)return;e.dataset.out='1';e.style.opacity='0';setTimeout(function(){e.remove();window.dispatchEvent(new Event('asmlab:boot-gone'))},480)}function go(){if(hiding)return;hiding=1;setTimeout(out,Math.max(0,MIN-(Date.now()-T0)))}window.__hideBootSplash=function(){settled=1;go()};window.__licenceSettled=function(){settled=1;go()};window.__bootLicence=function(t){var l=document.getElementById('boot-licence');if(l)l.textContent=t};var bs=document.getElementById('asmlab-boot');if(bs){bs.style.pointerEvents='auto';bs.addEventListener('click',out)}setTimeout(out,20000);
     </script>
     <div id="root"></div>
   </body>
