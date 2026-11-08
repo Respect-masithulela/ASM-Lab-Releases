@@ -1,0 +1,2397 @@
+{
+  "units": "metres, radians (degrees given for convenience)",
+  "coordinates": "glTF: +Y up. Blender build axes map as X->X, Y->-Z, Z->Y. Machine forward = +X.",
+  "rule": "Each joint node's origin is its real pivot. Rotate/translate the node about/along 'axis' in its parent space by 'value'. rest = value at which the exported GLB was saved. 'scale' joints scale along 'axis'.",
+  "equipment": {
+    "EQ_LHD_18t": {
+      "file": "EQ_LHD_18t.glb",
+      "nodes": [
+        "LHD_Boom",
+        "LHD_Bucket",
+        "LHD_Bucket_Ore",
+        "LHD_FrontFrame",
+        "LHD_LiftCyl_L",
+        "LHD_LiftCyl_L_Rod",
+        "LHD_LiftCyl_L_Target",
+        "LHD_LiftCyl_R",
+        "LHD_LiftCyl_R_Rod",
+        "LHD_LiftCyl_R_Target",
+        "LHD_ROOT",
+        "LHD_RearFrame",
+        "LHD_TiltCyl",
+        "LHD_TiltCyl_Rod",
+        "LHD_TiltCyl_Target",
+        "LHD_Wheel_FL",
+        "LHD_Wheel_FR",
+        "LHD_Wheel_RL",
+        "LHD_Wheel_RR"
+      ],
+      "joints": [
+        {
+          "node": "LHD_ROOT",
+          "type": "translate+yaw",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Move/turn the whole machine. Origin = ground point under the articulation joint. Forward = +X.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "LHD_Wheel_RL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance_travelled / 0.86 (rear tyre radius). Positive rolls forward (+X).",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.55,
+            0.86,
+            -1.15
+          ]
+        },
+        {
+          "node": "LHD_Wheel_RR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance_travelled / 0.86",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.55,
+            0.86,
+            1.15
+          ]
+        },
+        {
+          "node": "LHD_Wheel_FL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance_travelled / 1.00 (front tyre radius)",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            2.05,
+            1.0,
+            -1.15
+          ]
+        },
+        {
+          "node": "LHD_Wheel_FR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance_travelled / 1.00",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            2.05,
+            1.0,
+            1.15
+          ]
+        },
+        {
+          "node": "LHD_FrontFrame",
+          "type": "rotate",
+          "min": -0.7330382858376184,
+          "max": 0.7330382858376184,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Articulation steer. Positive swings the front frame to the machine's left.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "LHD_Boom",
+          "type": "rotate",
+          "min": -0.7853981633974483,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Lift. 0 = boom down; -38 deg = full raise for dumping.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.3,
+            2.05,
+            -0.0
+          ]
+        },
+        {
+          "node": "LHD_Bucket_Ore",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Bucket load: 0.001 = empty, 1 = heaped full. Grow while curling into the pile; shrink while dumping.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            5.0,
+            0.13,
+            -0.0
+          ]
+        },
+        {
+          "node": "LHD_Bucket",
+          "type": "rotate",
+          "min": -0.4363323129985824,
+          "max": 1.6580627893946132,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Relative to the boom. Negative racks back (carry about -12 deg). Positive tips the lip down: dump at full raise (boom -38) needs about +85 deg; dump at boom down needs about +45 deg.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            4.05,
+            0.75,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Generic 18 t battery LHD sized to published LH518B-class specs. Wheels of the front axle are children of LHD_FrontFrame, so they steer with it."
+    },
+    "EQ_ApronFeeder_8m": {
+      "file": "EQ_ApronFeeder_8m.glb",
+      "nodes": [
+        "AF_Frame",
+        "AF_Ore",
+        "AF_Pans_Bottom",
+        "AF_Pans_Top",
+        "AF_ROOT",
+        "AF_Sprocket_Head",
+        "AF_Sprocket_Tail"
+      ],
+      "joints": [
+        {
+          "node": "AF_Pans_Top",
+          "type": "translate",
+          "min": 0.0,
+          "max": 0.4,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = (speed * t) mod 0.40   (pan pitch 0.40 m; typical speed 0.1-0.3 m/s)",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "AF_Pans_Bottom",
+          "type": "translate",
+          "min": -0.4,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = -((speed * t) mod 0.40)",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "AF_Sprocket_Head",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = (speed * t) / 0.50",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            8.0,
+            1.1,
+            -0.0
+          ]
+        },
+        {
+          "node": "AF_Sprocket_Tail",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = (speed * t) / 0.50",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.1,
+            -0.0
+          ]
+        },
+        {
+          "node": "AF_Ore",
+          "type": "translate",
+          "min": 0.0,
+          "max": 1.2,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Ore bed on the pans: offset = (speed * t) mod 1.2 (pattern repeats every 1.2 m). Scale to 0.001 to run empty.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Tail at origin, discharges at +X (head at x = 8 m). Pans loop seamlessly with the modulo offset."
+    },
+    "EQ_RockBreaker": {
+      "file": "EQ_RockBreaker.glb",
+      "nodes": [
+        "RB_Boom",
+        "RB_BoomCyl",
+        "RB_BoomCyl_Rod",
+        "RB_BoomCyl_Target",
+        "RB_Hammer",
+        "RB_HammerCyl",
+        "RB_HammerCyl_Rod",
+        "RB_HammerCyl_Target",
+        "RB_Pedestal",
+        "RB_ROOT",
+        "RB_Slew",
+        "RB_Stick",
+        "RB_StickCyl",
+        "RB_StickCyl_Rod",
+        "RB_StickCyl_Target"
+      ],
+      "joints": [
+        {
+          "node": "RB_Slew",
+          "type": "rotate",
+          "min": -2.0943951023931953,
+          "max": 2.0943951023931953,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Slew the whole arm.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.75,
+            -0.0
+          ]
+        },
+        {
+          "node": "RB_Boom",
+          "type": "rotate",
+          "min": -0.6,
+          "max": 0.6,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Positive lowers the boom.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.75,
+            3.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RB_Stick",
+          "type": "rotate",
+          "min": 0.0,
+          "max": 1.4,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Positive folds the stick down.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            4.8,
+            3.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RB_Hammer",
+          "type": "rotate",
+          "min": -1.6,
+          "max": 0.6,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Hammer attitude; keep the chisel roughly vertical: hammer ~= -(boom + stick). Breaking blows: add a 4-6 Hz pulse of +0.02 rad to RB_Boom.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            7.8,
+            3.6,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Pedestal breaker (picker). Rest pose = arm straight out horizontally."
+    },
+    "EQ_Conveyor_20m": {
+      "file": "EQ_Conveyor_20m.glb",
+      "nodes": [
+        "CV_Belt_Return",
+        "CV_Belt_Top",
+        "CV_Idlers",
+        "CV_Ore",
+        "CV_ROOT",
+        "CV_Structure"
+      ],
+      "joints": [
+        {
+          "node": "CV_Belt_Top",
+          "type": "translate",
+          "min": 0.0,
+          "max": 1.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = (belt_speed * t) mod 1.0 (belt marks every 1 m; typical 2-5 m/s)",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "CV_Belt_Return",
+          "type": "translate",
+          "min": -1.0,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = -((belt_speed * t) mod 1.0)",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "CV_Ore",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Ore on the belt: offset = (belt_speed * t) mod 2.0. Scale to 0.001 for an empty belt.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Carry direction +X. The belt meshes overhang the 20 m section by up to 1 m at the ends."
+    },
+    "EQ_Skip": {
+      "file": "EQ_Skip.glb",
+      "nodes": [
+        "SK_Skip_Body",
+        "SK_Skip_Door",
+        "SK_Skip_Ore",
+        "SK_Skip_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "SK_Skip_ROOT",
+          "type": "translate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Hoist position. Origin = skip bottom centre. Skip body 9 m + bridle; rope attaches 12.8 m above origin.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "SK_Skip_Door",
+          "type": "rotate",
+          "min": 0.0,
+          "max": 1.9198621771937625,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Bottom-dump door, hinged at its LOWER edge (0.55 m above the skip origin, +X side). Positive tilts it down and out: the bottom opens and the door becomes the discharge chute. Drive it from skip height so the dump rollers stay in the scrolls: door = 110deg * s(h_rel/4.0), s(t)=t*t*(3-2t) clamped 0..1, h_rel = skip_origin_z - DumpScrolls_origin_z.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.0,
+            0.55,
+            -0.0
+          ]
+        },
+        {
+          "node": "SK_Skip_Ore",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Fill level: 0.001 = empty, 1 = full.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.7,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Bottom-dump skip, 2.0 x 1.7 m, guide shoes on +/-Y. Floor slopes down to the bottom discharge opening on +X. Dump rollers on the door arms stick out 0.55 m beyond each side (+/-Y) to run in EQ_DumpScrolls."
+    },
+    "EQ_DumpScrolls": {
+      "file": "EQ_DumpScrolls.glb",
+      "nodes": [
+        "SK_DumpScrolls"
+      ],
+      "joints": [],
+      "notes": "Fixed curved rails (scrolls) for the headframe, one each side of the skip compartment. Origin = skip ORIGIN height at which the rollers enter the scrolls (x, y = shaft centre). The skip reaches the full-dump position 4.0 m higher. The rail shape is generated from the same door formula given for SK_Skip_Door, so rollers and rails always match."
+    },
+    "EQ_LoadingChute": {
+      "file": "EQ_LoadingChute.glb",
+      "nodes": [
+        "SK_Chute_Hopper",
+        "SK_Chute_Lip",
+        "SK_OreStream_Load"
+      ],
+      "joints": [
+        {
+          "node": "SK_Chute_Lip",
+          "type": "translate",
+          "min": -1.3,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "0 = extended over the skip, -1.3 = retracted behind the shaft barrier.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.8,
+            -0.0
+          ]
+        },
+        {
+          "node": "SK_OreStream_Load",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Ore curtain: scale all axes 0.001 to hide, 1 to show.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            2.5,
+            0.6,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Origin = back of the fixed hopper. Place so the lip tip (x = +2.5 at rest) is over the skip opening."
+    },
+    "EQ_ShaftBarrier_Gate": {
+      "file": "EQ_ShaftBarrier_Gate.glb",
+      "nodes": [
+        "SK_Shaft_Barrier",
+        "SK_Shaft_Gate"
+      ],
+      "joints": [
+        {
+          "node": "SK_Shaft_Gate",
+          "type": "translate",
+          "min": -3.1,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "0 = closed, -3.1 = open (slides along the track).",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.12,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Mesh barrier around the shaft opening at the loading level. Origin = shaft centre at floor level; gate on the -X face."
+    },
+    "EQ_Sheave_Rope": {
+      "file": "EQ_Sheave_Rope.glb",
+      "nodes": [
+        "SK_Rope",
+        "SK_Sheave"
+      ],
+      "joints": [
+        {
+          "node": "SK_Sheave",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = -(skip_rise_m) / 2.5   (sheave radius 2.5 m)",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.5,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "SK_Rope",
+          "type": "scale",
+          "min": 0.001,
+          "max": null,
+          "rest": 1.0,
+          "unit": "m",
+          "use": "Rope mesh is 1 m long hanging DOWN from the node origin: scale = rope length in metres (= sheave tangent height - rope attachment height).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Origin = the point where the rope leaves the sheave (sheave centre is 2.5 m to -X)."
+    },
+    "EQ_PersonnelCage": {
+      "file": "EQ_PersonnelCage.glb",
+      "nodes": [
+        "CAGE_ROOT",
+        "Cage_Gate",
+        "Cage_Gate_Track",
+        "Cage_Mesh_Walls",
+        "Cage_Structure"
+      ],
+      "joints": [
+        {
+          "node": "CAGE_ROOT",
+          "type": "translate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Hoist position. Origin = cage floor centre. Boarding side faces -Y.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "Cage_Gate",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.95,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "0 = closed, +2.95 = open (slides behind the +X side mesh).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Single-deck personnel cage, 3.2 x 5.0 m inside. Ropes attach at 5.6 m."
+    },
+    "EQ_GyratoryCrusher": {
+      "file": "EQ_GyratoryCrusher.glb",
+      "nodes": [
+        "GC_Eccentric",
+        "GC_Mantle",
+        "GC_ROOT",
+        "GC_Shells"
+      ],
+      "joints": [
+        {
+          "node": "GC_Eccentric",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Spin continuously: angle = 2*pi*rev_per_s*t (real ~2.5 rev/s; 0.5-1 looks better on camera).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "GC_Mantle",
+          "type": "fixed-tilt",
+          "min": null,
+          "max": null,
+          "rest": 0.026179938779914945,
+          "unit": "rad",
+          "use": "Do not animate. Its 1.5 deg tilt makes the mantle gyrate when GC_Eccentric spins.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            7.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Primary gyratory crusher, feed opening at the top (z ~ 6.3 m), discharge below. Origin = crusher axis at floor."
+    },
+    "EQ_MeasuringFlask": {
+      "file": "EQ_MeasuringFlask.glb",
+      "nodes": [
+        "MF_Body",
+        "MF_DischargeGate",
+        "MF_InletGate",
+        "MF_Ore",
+        "MF_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "MF_InletGate",
+          "type": "rotate",
+          "min": -1.3962634015954636,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Top flap. Negative lifts it open.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -1.1,
+            5.1,
+            -0.0
+          ]
+        },
+        {
+          "node": "MF_DischargeGate",
+          "type": "rotate",
+          "min": -1.2217304763960306,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Side discharge flap on +X, hinged at its top edge. Negative swings it open.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.2,
+            1.5,
+            -0.0
+          ]
+        },
+        {
+          "node": "MF_Ore",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Fill level.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Measuring flask between the feeder and the skip. Discharges to +X."
+    },
+    "EQ_VentFan": {
+      "file": "EQ_VentFan.glb",
+      "nodes": [
+        "VF_Casing",
+        "VF_Impeller",
+        "VF_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "VF_Impeller",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = 2*pi*rev_per_s*t (spin; airflow toward +X).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.5,
+            1.5,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Axial auxiliary fan, 2.2 m impeller. Origin = under the fan axis at floor."
+    },
+    "EQ_VentDoor": {
+      "file": "EQ_VentDoor.glb",
+      "nodes": [
+        "VD_Frame",
+        "VD_Leaf_L",
+        "VD_Leaf_R",
+        "VD_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "VD_Leaf_L",
+          "type": "rotate",
+          "min": 0.0,
+          "max": 1.5707963267948966,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Positive opens toward +X.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.3,
+            0.0,
+            -2.5
+          ]
+        },
+        {
+          "node": "VD_Leaf_R",
+          "type": "rotate",
+          "min": -1.5707963267948966,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Negative opens toward +X.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.3,
+            0.0,
+            2.5
+          ]
+        }
+      ],
+      "notes": "Double-leaf ventilation door for a 5 x 5 m drive. Origin = doorway centre at floor."
+    },
+    "EQ_ShaftStationBarrier": {
+      "file": "EQ_ShaftStationBarrier.glb",
+      "nodes": [
+        "SB_FixedBarrier",
+        "SB_Gate_Cage",
+        "SB_Gate_Skip1",
+        "SB_Gate_Skip2",
+        "SB_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "SB_Gate_Cage",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.4,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Vertical-lift gate for the man & material cage compartment. 0 = closed, 2.4 = open.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            3.92
+          ]
+        },
+        {
+          "node": "SB_Gate_Skip1",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.4,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Gate for skip compartment 1 (chute access at the loading station).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            4.1,
+            0.0,
+            3.92
+          ]
+        },
+        {
+          "node": "SB_Gate_Skip2",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.4,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Gate for skip compartment 2.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            7.4,
+            0.0,
+            3.92
+          ]
+        }
+      ],
+      "notes": "Barrier round the WHOLE shaft collar at a station: cage compartment + two skip compartments (balanced pair). Use the same asset at every shaft station (personnel stations and the skip-loading station); place it at the landing floor level. Origin = cage compartment centre at floor level; landing side = -Y (glTF +Z)."
+    },
+    "EQ_Winder_DoubleDrum": {
+      "file": "EQ_Winder_DoubleDrum.glb",
+      "nodes": [
+        "WD_DepthIndicator",
+        "WD_Drums",
+        "WD_Frame",
+        "WD_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "WD_Drums",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = skip_travel_m / 2.75 (drum radius). Positive = winding rope on (hoisting).",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            3.4,
+            -0.0
+          ]
+        },
+        {
+          "node": "WD_DepthIndicator",
+          "type": "rotate",
+          "min": 0.0,
+          "max": 5.759586531581287,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Pointer: angle = 330deg * (depth fraction travelled).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            -3.38,
+            1.9,
+            3.5
+          ]
+        }
+      ],
+      "notes": "Double-drum winder for the winder house (two drums on one shaft, one per skip of the balanced pair)."
+    },
+    "EQ_CageCounterweight": {
+      "file": "EQ_CageCounterweight.glb",
+      "nodes": [
+        "CW_Body",
+        "CW_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "CW_ROOT",
+          "type": "translate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "cw_z = top_z + bottom_z - cage_z (moves opposite the cage).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Counterweight for the man & material cage; runs in the Counterweight compartment of the shaft layout."
+    },
+    "EQ_OreStreams": {
+      "file": "EQ_OreStreams.glb",
+      "nodes": [
+        "OS_Chute",
+        "OS_Chute_Flow",
+        "OS_Crusher_Discharge",
+        "OS_Crusher_Discharge_Flow",
+        "OS_Feeder_Head",
+        "OS_Feeder_Head_Flow",
+        "OS_LHD_Tip",
+        "OS_LHD_Tip_Flow",
+        "OS_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "OS_LHD_Tip",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Visibility: set ALL three scale axes to 0.001 (off) or 1 (on).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_LHD_Tip_Flow",
+          "type": "translate",
+          "min": -0.9,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Falling motion: offset = -((fall_speed * t) mod 0.9). fall_speed ~3-6 m/s.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Crusher_Discharge",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Visibility: set ALL three scale axes to 0.001 (off) or 1 (on).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            6.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Crusher_Discharge_Flow",
+          "type": "translate",
+          "min": -0.8,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Falling motion: offset = -((fall_speed * t) mod 0.8). fall_speed ~3-6 m/s.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            6.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Feeder_Head",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Visibility: set ALL three scale axes to 0.001 (off) or 1 (on).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            12.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Feeder_Head_Flow",
+          "type": "translate",
+          "min": -0.6,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Falling motion: offset = -((fall_speed * t) mod 0.6). fall_speed ~3-6 m/s.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            12.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Chute",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Visibility: set ALL three scale axes to 0.001 (off) or 1 (on).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            17.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "OS_Chute_Flow",
+          "type": "translate",
+          "min": -0.6,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Falling motion: offset = -((fall_speed * t) mod 0.6). fall_speed ~3-6 m/s.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            17.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Four falling-ore curtains. Place each OS_<name> node at the discharge point (they are laid out side by side in the file): LHD_Tip 2.8 m wide x 3 m fall; Crusher_Discharge 2.6 m dia x 2.5 m; Feeder_Head 1.6 m x 1.6 m; Chute 1.0 m x 2 m."
+    },
+    "EQ_DrawpointOrePile": {
+      "file": "EQ_DrawpointOrePile.glb",
+      "nodes": [
+        "DP_Pile_Body",
+        "DP_Pile_Toe",
+        "DP_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "DP_Pile_Toe",
+          "type": "scale",
+          "min": 0.25,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Scale ALL axes: drop to ~0.3 as the bucket takes a load, then back to 1 over 3-10 s (cave slumps).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.6,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Ore pile inside a drawpoint. Origin = toe at floor; the pile runs up into the drawpoint along +X (place the origin ~2.5 m inside the brow, +X into the drawpoint)."
+    },
+    "EQ_LHD_Charger": {
+      "file": "EQ_LHD_Charger.glb",
+      "nodes": [
+        "CH_Cabinet",
+        "CH_Cable",
+        "CH_Connector",
+        "CH_Light_Amber",
+        "CH_Light_Green",
+        "CH_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "CH_Connector",
+          "type": "translate+rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Free node: move it from the holster (rest) to the LHD charge socket.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            -0.45,
+            1.3,
+            0.06
+          ]
+        },
+        {
+          "node": "CH_Light_Green",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Charged / ready lamp: scale all axes 0.001 (off) or 1 (on).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.27,
+            2.15,
+            -0.0
+          ]
+        },
+        {
+          "node": "CH_Light_Amber",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Charging lamp.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            -0.27,
+            2.15,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "LHD battery charger. CH_Cable is an aim-and-stretch item (see aim_stretch.cables): keep it pointed at the connector."
+    },
+    "EQ_BoomGate": {
+      "file": "EQ_BoomGate.glb",
+      "nodes": [
+        "BG_Boom",
+        "BG_Post",
+        "BG_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "BG_Boom",
+          "type": "rotate",
+          "min": -1.53588974175501,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "0 = closed (horizontal); -88 deg = raised.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Vehicle/pedestrian boom gate. Boom extends along +X."
+    },
+    "EQ_TrafficLight": {
+      "file": "EQ_TrafficLight.glb",
+      "nodes": [
+        "TL_Amber_On",
+        "TL_Green_On",
+        "TL_Pole",
+        "TL_ROOT",
+        "TL_Red_On"
+      ],
+      "joints": [
+        {
+          "node": "TL_Red_On",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Lit lamp: scale all axes 0.001 (off) / 1 (on).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.92,
+            0.235
+          ]
+        },
+        {
+          "node": "TL_Amber_On",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Lit lamp.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.6,
+            0.235
+          ]
+        },
+        {
+          "node": "TL_Green_On",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Lit lamp.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.28,
+            0.235
+          ]
+        }
+      ],
+      "notes": "Underground traffic light; lamps face -Y (glTF +Z)."
+    },
+    "EQ_RefugeBulkhead": {
+      "file": "EQ_RefugeBulkhead.glb",
+      "nodes": [
+        "RC_Beacon_On",
+        "RC_Bulkhead",
+        "RC_Door",
+        "RC_ROOT"
+      ],
+      "joints": [
+        {
+          "node": "RC_Door",
+          "type": "rotate",
+          "min": -1.7453292519943295,
+          "max": 0.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Negative swings the door open outward (toward -Y).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            -0.5,
+            0.0,
+            0.12
+          ]
+        },
+        {
+          "node": "RC_Beacon_On",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Green 'refuge available' beacon on/off.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            4.2,
+            0.15
+          ]
+        }
+      ],
+      "notes": "Refuge chamber bulkhead with personnel door; fits a 5.2 x 4.6 m excavation. Faces -Y."
+    },
+    "EQ_UtilityVehicle": {
+      "file": "EQ_UtilityVehicle.glb",
+      "nodes": [
+        "UV_Body",
+        "UV_ROOT",
+        "UV_Steer_FL",
+        "UV_Steer_FR",
+        "UV_Wheel_FL",
+        "UV_Wheel_FR",
+        "UV_Wheel_RL",
+        "UV_Wheel_RR"
+      ],
+      "joints": [
+        {
+          "node": "UV_ROOT",
+          "type": "translate+yaw",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Move/turn the vehicle. Origin = ground at the centre of the wheelbase. Forward = +X.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "UV_Steer_FL",
+          "type": "rotate",
+          "min": -0.6108652381980153,
+          "max": 0.6108652381980153,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Front-wheel steer (Ackermann: inner wheel a little more). Positive = left.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.5,
+            0.42,
+            -0.775
+          ]
+        },
+        {
+          "node": "UV_Steer_FR",
+          "type": "rotate",
+          "min": -0.6108652381980153,
+          "max": 0.6108652381980153,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Front-wheel steer.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.5,
+            0.42,
+            0.775
+          ]
+        },
+        {
+          "node": "UV_Wheel_FL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.42",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.5,
+            0.42,
+            -0.775
+          ]
+        },
+        {
+          "node": "UV_Wheel_FR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.42",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.5,
+            0.42,
+            0.775
+          ]
+        },
+        {
+          "node": "UV_Wheel_RL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.42",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -1.5,
+            0.42,
+            -0.775
+          ]
+        },
+        {
+          "node": "UV_Wheel_RR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.42",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -1.5,
+            0.42,
+            0.775
+          ]
+        }
+      ],
+      "notes": "Underground personnel carrier / light vehicle: cab, canopy over inward-facing benches, beacon and buggy whip. Wheelbase 3.0 m."
+    },
+    "EQ_SecondaryBreaker": {
+      "file": "EQ_SecondaryBreaker.glb",
+      "nodes": [
+        "SB2_Boom",
+        "SB2_BoomCyl",
+        "SB2_BoomCyl_Rod",
+        "SB2_BoomCyl_Target",
+        "SB2_Carrier",
+        "SB2_Hammer",
+        "SB2_HammerCyl",
+        "SB2_HammerCyl_Rod",
+        "SB2_HammerCyl_Target",
+        "SB2_ROOT",
+        "SB2_Slew",
+        "SB2_Stick",
+        "SB2_StickCyl",
+        "SB2_StickCyl_Rod",
+        "SB2_StickCyl_Target",
+        "SB2_Wheel_FL",
+        "SB2_Wheel_FR",
+        "SB2_Wheel_RL",
+        "SB2_Wheel_RR"
+      ],
+      "joints": [
+        {
+          "node": "SB2_ROOT",
+          "type": "translate+yaw",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Move the carrier (rigid chassis). Forward = +X.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "node": "SB2_Wheel_FL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.62",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.0,
+            0.62,
+            -1.05
+          ]
+        },
+        {
+          "node": "SB2_Wheel_FR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.62",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.0,
+            0.62,
+            1.05
+          ]
+        },
+        {
+          "node": "SB2_Wheel_RL",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.62",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.0,
+            0.62,
+            -1.05
+          ]
+        },
+        {
+          "node": "SB2_Wheel_RR",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = distance / 0.62",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            -2.0,
+            0.62,
+            1.05
+          ]
+        },
+        {
+          "node": "SB2_Slew",
+          "type": "rotate",
+          "min": -1.5707963267948966,
+          "max": 1.5707963267948966,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Swing the boom.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.35,
+            1.45,
+            0.3
+          ]
+        },
+        {
+          "node": "SB2_Boom",
+          "type": "rotate",
+          "min": -0.7,
+          "max": 0.5,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Positive lowers the boom.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            1.55,
+            2.0,
+            0.3
+          ]
+        },
+        {
+          "node": "SB2_Stick",
+          "type": "rotate",
+          "min": -0.6,
+          "max": 0.9,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Positive curls the stick down.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            4.55,
+            2.68,
+            0.3
+          ]
+        },
+        {
+          "node": "SB2_Hammer",
+          "type": "rotate",
+          "min": -1.0,
+          "max": 1.0,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Hammer attitude. Blows: 4-6 Hz pulse of +0.015 rad on SB2_Boom.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            6.35,
+            1.28,
+            0.3
+          ]
+        }
+      ],
+      "notes": "Mobile secondary breaker for oversize at drawpoints. Its boom/stick/hammer cylinders are aim-and-stretch items."
+    },
+    "EQ_WaterCannon": {
+      "file": "EQ_WaterCannon.glb",
+      "nodes": [
+        "WC_Jet",
+        "WC_Jet_Flow",
+        "WC_Pan",
+        "WC_ROOT",
+        "WC_Skid",
+        "WC_Tilt"
+      ],
+      "joints": [
+        {
+          "node": "WC_Pan",
+          "type": "rotate",
+          "min": -2.9670597283903604,
+          "max": 2.9670597283903604,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Pan the monitor.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.1,
+            -0.0
+          ]
+        },
+        {
+          "node": "WC_Tilt",
+          "type": "rotate",
+          "min": -1.0471975511965976,
+          "max": 0.5235987755982988,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Negative aims the nozzle up.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.45,
+            -0.0
+          ]
+        },
+        {
+          "node": "WC_Jet",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Jet on/off: scale all axes 0.001 / 1.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.05,
+            1.45,
+            -0.0
+          ]
+        },
+        {
+          "node": "WC_Jet_Flow",
+          "type": "translate",
+          "min": 0.0,
+          "max": 0.5,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "Jet motion: offset = (jet_speed * t) mod 0.5 along the nozzle.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.05,
+            1.45,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Remote water cannon (monitor) on a skid, for washing down / clearing hang-ups. Nozzle points +X at rest."
+    },
+    "EQ_SAGMill": {
+      "file": "EQ_SAGMill.glb",
+      "nodes": [
+        "SAG_Frame",
+        "SAG_Pinion",
+        "SAG_ROOT",
+        "SAG_Shell"
+      ],
+      "joints": [
+        {
+          "node": "SAG_Shell",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = 2*pi*rpm/60*t (real SAG ~10 rpm). Shell + trommel turn together.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            5.2,
+            -0.0
+          ]
+        },
+        {
+          "node": "SAG_Pinion",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = -SAG_Shell_angle * 7.4 (girth gear / pinion ratio).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            1.8,
+            3.0,
+            4.75
+          ]
+        }
+      ],
+      "notes": "SAG mill, 8 m dia x 5 m, axis along X; feed at -X, trommel discharge at +X."
+    },
+    "EQ_FlotationCell": {
+      "file": "EQ_FlotationCell.glb",
+      "nodes": [
+        "FC_Agitator",
+        "FC_Froth",
+        "FC_Froth_Flow",
+        "FC_ROOT",
+        "FC_Tank"
+      ],
+      "joints": [
+        {
+          "node": "FC_Agitator",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = 2*pi*rev_per_s*t (rotor ~2-3 rev/s).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            4.2,
+            -0.0
+          ]
+        },
+        {
+          "node": "FC_Froth",
+          "type": "scale",
+          "min": 0.001,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Froth layer on/off (all axes).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            3.9,
+            -0.0
+          ]
+        },
+        {
+          "node": "FC_Froth_Flow",
+          "type": "scale",
+          "min": 1.0,
+          "max": 1.1923076923076923,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Froth crawling to the launder: scale X and Y together by 1 + ((v*t) mod 0.5)/2.6 (radial loop).",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            3.9,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "Round tank flotation cell, 5.2 m dia, peripheral launder. Use several in a row for a bank."
+    },
+    "EQ_Thickener": {
+      "file": "EQ_Thickener.glb",
+      "nodes": [
+        "TH_ROOT",
+        "TH_Rake",
+        "TH_Tank"
+      ],
+      "joints": [
+        {
+          "node": "TH_Rake",
+          "type": "rotate",
+          "min": null,
+          "max": null,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "angle = 2*pi*t/period (real ~1 rev per 10-20 min; speed it up for video).",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "30 m high-rate thickener with drive head, bridge and rotating rake."
+    },
+    "EQ_RadialStacker": {
+      "file": "EQ_RadialStacker.glb",
+      "nodes": [
+        "RS_Base",
+        "RS_Belt",
+        "RS_Boom",
+        "RS_Ore",
+        "RS_Pile",
+        "RS_ROOT",
+        "RS_Slew"
+      ],
+      "joints": [
+        {
+          "node": "RS_Slew",
+          "type": "rotate",
+          "min": -1.5707963267948966,
+          "max": 1.5707963267948966,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Slew the stacker about the pivot.",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            1.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RS_Boom",
+          "type": "rotate",
+          "min": -0.10471975511965978,
+          "max": 0.20943951023931956,
+          "rest": 0.0,
+          "unit": "rad",
+          "use": "Luff about the pivot. Rest = 14 deg working incline (head ~11 m high). Positive lowers the head.",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RS_Belt",
+          "type": "translate",
+          "min": 0.0,
+          "max": 1.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = (belt_speed * t) mod 1.0",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RS_Ore",
+          "type": "translate",
+          "min": 0.0,
+          "max": 2.0,
+          "rest": 0.0,
+          "unit": "m",
+          "use": "offset = (belt_speed * t) mod 2.0 (scale 0.001 for an empty belt)",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            0.0,
+            2.6,
+            -0.0
+          ]
+        },
+        {
+          "node": "RS_Pile",
+          "type": "scale",
+          "min": 0.05,
+          "max": 1.0,
+          "rest": 1.0,
+          "unit": "factor",
+          "use": "Stockpile growth: scale all axes (full = 9.5 m high, 26 m base). Origin = pile centre under the head at slew 0; move it with the slew to build a ring.",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "pivot_world_gltf": [
+            34.9306,
+            0.0,
+            -0.0
+          ]
+        }
+      ],
+      "notes": "36 m radial stacker on a pivot with a wheel bogie; conical stockpile at the head."
+    }
+  },
+  "aim_stretch": {
+    "how": "barrel (or cable) node: rotate so its local 'aim' axis points at the target node's world position (q = rotationBetween(aim, normalize(target - barrel_origin) in parent space)). rod node: translate along 'aim' by (distance - rest_length). Keep distance between min_length and max_length.",
+    "cylinders": [
+      {
+        "barrel": "LHD_LiftCyl_L",
+        "rod": "LHD_LiftCyl_L_Rod",
+        "target": "LHD_LiftCyl_L_Target",
+        "aim": [
+          0.9657,
+          0.2556,
+          -0.0454
+        ],
+        "rest_length": 1.7604,
+        "min_length": 1.1414,
+        "max_length": 2.5525
+      },
+      {
+        "barrel": "LHD_LiftCyl_R",
+        "rod": "LHD_LiftCyl_R_Rod",
+        "target": "LHD_LiftCyl_R_Target",
+        "aim": [
+          0.9657,
+          0.2556,
+          0.0454
+        ],
+        "rest_length": 1.7604,
+        "min_length": 1.1414,
+        "max_length": 2.5525
+      },
+      {
+        "barrel": "LHD_TiltCyl",
+        "rod": "LHD_TiltCyl_Rod",
+        "target": "LHD_TiltCyl_Target",
+        "aim": [
+          0.9766,
+          -0.2149,
+          -0.0
+        ],
+        "rest_length": 2.5598,
+        "min_length": 1.6371,
+        "max_length": 3.7117
+      },
+      {
+        "barrel": "RB_BoomCyl",
+        "rod": "RB_BoomCyl_Rod",
+        "target": "RB_BoomCyl_Target",
+        "aim": [
+          0.9939,
+          0.1104,
+          -0.0
+        ],
+        "rest_length": 2.2638,
+        "min_length": 1.4536,
+        "max_length": 3.2826
+      },
+      {
+        "barrel": "RB_StickCyl",
+        "rod": "RB_StickCyl_Rod",
+        "target": "RB_StickCyl_Target",
+        "aim": [
+          0.9983,
+          -0.0576,
+          -0.0
+        ],
+        "rest_length": 2.6043,
+        "min_length": 1.6647,
+        "max_length": 3.7763
+      },
+      {
+        "barrel": "RB_HammerCyl",
+        "rod": "RB_HammerCyl_Rod",
+        "target": "RB_HammerCyl_Target",
+        "aim": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "rest_length": 1.95,
+        "min_length": 1.259,
+        "max_length": 2.8275
+      },
+      {
+        "barrel": "SB2_BoomCyl",
+        "rod": "SB2_BoomCyl_Rod",
+        "target": "SB2_BoomCyl_Target",
+        "aim": [
+          0.9119,
+          0.4104,
+          -0.0
+        ],
+        "rest_length": 1.0966,
+        "min_length": 0.7299,
+        "max_length": 1.59
+      },
+      {
+        "barrel": "SB2_StickCyl",
+        "rod": "SB2_StickCyl_Rod",
+        "target": "SB2_StickCyl_Target",
+        "aim": [
+          0.9946,
+          0.104,
+          -0.0
+        ],
+        "rest_length": 2.212,
+        "min_length": 1.4214,
+        "max_length": 3.2074
+      },
+      {
+        "barrel": "SB2_HammerCyl",
+        "rod": "SB2_HammerCyl_Rod",
+        "target": "SB2_HammerCyl_Target",
+        "aim": [
+          0.7071,
+          -0.7071,
+          -0.0
+        ],
+        "rest_length": 1.4142,
+        "min_length": 0.9268,
+        "max_length": 2.0506
+      }
+    ],
+    "cables": [
+      {
+        "node": "CH_Cable",
+        "target": "CH_Connector",
+        "target_offset": [
+          0,
+          -0.3,
+          0
+        ],
+        "aim": [
+          0.0,
+          0.9524,
+          0.3048
+        ],
+        "rest_length": 0.2625,
+        "use": "aim the node's local 'aim' axis at the connector tail and scale along it by distance/rest_length"
+      }
+    ]
+  },
+  "shaft_layout": {
+    "origin": "cage compartment centre at station floor level (same origin as EQ_ShaftStationBarrier)",
+    "compartments_gltf_xz": {
+      "Cage": {
+        "centre": [
+          0.0,
+          -0.0
+        ],
+        "clear_size_x_z": [
+          4.6,
+          6.6
+        ]
+      },
+      "Skip1": {
+        "centre": [
+          4.1,
+          1.7
+        ],
+        "clear_size_x_z": [
+          3.0,
+          3.2
+        ]
+      },
+      "Skip2": {
+        "centre": [
+          7.4,
+          1.7
+        ],
+        "clear_size_x_z": [
+          3.0,
+          3.2
+        ]
+      },
+      "Counterweight": {
+        "centre": [
+          -3.45,
+          -1.6
+        ],
+        "clear_size_x_z": [
+          1.6,
+          2.8
+        ]
+      }
+    },
+    "fit": "EQ_CageCounterweight origin -> Counterweight centre (it moves opposite the cage: cw_z = top_z + bottom_z - cage_z). EQ_PersonnelCage origin -> Cage centre (boarding side faces the landing). EQ_Skip origin -> Skip1 / Skip2 centres (skip guides on the compartment's long sides). Rotate EQ_LoadingChute so its lip extends through the Skip gate toward the skip.",
+    "replaces": "EQ_ShaftBarrier_Gate (single-compartment) is kept only for the stand-alone skip demo."
+  },
+  "infrastructure_moving_parts": {
+    "headgear.glb / HG_BankGate": "translate X. Saved OPEN; +3.2 m closes it.",
+    "UG_Shaft_Station.glb / UG_Station_Gate": "translate X. Saved OPEN; +2.8 m closes it.",
+    "UG_RockBreaker.glb": "superseded by EQ_RockBreaker.glb"
+  }
+}
